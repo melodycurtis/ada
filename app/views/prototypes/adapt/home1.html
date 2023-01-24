@@ -4,7 +4,16 @@
   GOV.UK prototype kit
 {% endblock %}
 {% block beforeContent %}
-  
+<div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content">
+      <strong class="govuk-tag govuk-phase-banner__content__tag">
+        beta
+      </strong>
+      <span class="govuk-phase-banner__text">
+        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+      </span>
+    </p>
+  </div>
 
 {% endblock %}
 
@@ -29,42 +38,59 @@
         <div class="govuk-grid-row tile-group">
 
                 <div class="govuk-grid-column-one-third tile">
-                    <a class="min-height" href="choose_period">
+                    <a class="min-height" href="https://s101p01-ifax01.ad.hq.dept:8443/marketplace">
                         <span class="govuk-heading-m heading">Find data</span>
-                        <span class="govuk-heading-s heading">Search the data discovery platform</span>
+                        <span class="govuk-heading govuk-!-font-size-16">Search for data in the data discovery platform</span>
                     </a>
-                    <div class="govuk-body govuk-!-font-size-19 warning-info">.  </div>
+                    
     
                 </div>
      
                 <div class="govuk-grid-column-one-third tile">
-                    <a class="min-height" href="choose_eas">
+                    <a class="min-height" href="https://customer-academy.databricks.com/learn/signin">
                         <span class="govuk-heading-m heading">Analyse data</span>
-                        <span class="govuk-heading-s heading">Model data using databricks </span>
+                        <span class="govuk-heading govuk-!-font-size-16">Model your data using databricks </span>
                     </a>
-                    <div class="govuk-body govuk-!-font-size-19 warning-info">.  </div>
+                    
                 </div>
 
                 <div class="govuk-grid-column-one-third tile">
-                    <a class="min-height" href="choose_esf">
-                        <span class="govuk-heading-m heading">View current data</span>
-                        <span class="govuk-heading-s heading">Search exsisting reports</span>
+                    <a class="min-height" href="#">
+                        <span class="govuk-heading-m heading">Get support</span>
+                        <span class="govuk-heading govuk-!-font-size-16">Find training, communities and code libraries</span>
                     </a>
-                    <div class="govuk-body govuk-!-font-size-19 warning-info">.  </div>
+                    
                 </div>
     
                 <div class="govuk-grid-column-one-third tile">
-                    <a class="min-height" href="start-page">
-                        <span class="govuk-heading-m heading">Support and training</span>
-                        <span class="govuk-heading-s heading">Training, communities, code libraries</span>
+                    <a class="min-height" href="#">
+                        <span class="govuk-heading-m heading">Data request</span>
+                        <span class="govuk-heading govuk-!-font-size-16">Submit the access to data form</span>
                     </a>
-                    <div class="govuk-body govuk-!-font-size-19 warning-info">.  </div>
+                    
+    
+                </div>
+
+                <div class="govuk-grid-column-one-third tile">
+                    <a class="min-height" href="#">
+                        <span class="govuk-heading-m heading">Published reports</span>
+                        <span class="govuk-heading govuk-!-font-size-16">Search for existing data reports</span>
+                    </a>
+                    
+    
+                </div>
+                <div class="govuk-grid-column-one-third tile">
+                    <a class="min-height" href="#">
+                        <span class="govuk-heading-m heading">News + updates</span>
+                        <span class="govuk-heading govuk-!-font-size-16">See changes and new releases</span>
+                    </a>
+                    
     
                 </div>
             
-            </div>
+            </div><br><br>
 
-            <h2 class="govuk-heading-l">Help and support</h2>
+            <!--<h2 class="govuk-heading-m">News and data access requests</h2>
 
         
 
@@ -75,7 +101,7 @@
                             <span class="govuk-!-font-size-19 govuk-!-font-weight-bold">News and updates</span>
                             
                         </a>
-                        <div class="govuk-body warning-info-2">Changes and new releases</div>
+                        <div class="govuk-body warning-info-2">Changes and releases</div>
                         <span id="ob1" class="govuk-body onboarding-info">
                             <div class="arrow-up"></div>
                             <a class="close" href="#">Close</a>
@@ -93,7 +119,7 @@
                             <span class="govuk-!-font-size-19 govuk-!-font-weight-bold">Service Now</span> <br>
                             <span class="govuk-body govuk-!-font-size-16"></span>
                         </a>
-                        <div class="govuk-body warning-info-2">Log a request or get email support</div>
+                        <div class="govuk-body warning-info-2">Request access to data</div>
                         <span id="ob6" class="govuk-body onboarding-info">
                                 <div class="arrow-up"></div>
                                 <a class="close" href="#">Close</a>
@@ -104,7 +130,7 @@
                     </div>
 
 
-               <!-- <div class="govuk-grid-column-one-third tile">
+               <div class="govuk-grid-column-one-third tile">
                     <a class="grey min-height-small" href="qar">
                         <span class="govuk-!-font-size-19 govuk-!-font-weight-bold">QAR</span> <br>
                         <span class="govuk-body govuk-!-font-size-16">Qualification Achievement Rates </span>
