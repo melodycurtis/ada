@@ -1,0 +1,81 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+{% block beforeContent %}
+  <div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      Beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+  <div class="govuk-body account-info">
+    <div>
+        <span class="your-name" id="bannerUserName">Florence Bridger</span><a class="account-link" href="details" id="signout-link">Sign out</a>
+    </div>
+
+
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+            
+
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <h1 class="govuk-fieldset__heading">
+        Get support
+      </h1>
+    </legend><br>
+    
+    <p>You can get help by joining these communities on Slack:</p>
+      <p>#design channel in DfE Slack<br>
+      #design channel in cross-government Slack</p>
+      <p>Or these communities on MS Teams:</p>
+      <p>The DfE R community<br>
+       DfE analyst network<br>
+       DfE python community<br>
+       PDR User group</p>
+      
+      
+      
+       <h2 class="govuk-heading-l">Accessing data</h2>
+      <p>All data access is managed by Service Now. Over time you will be able to request access in the Data Discovery Platform or the Databricks application.</p><p></p>
+      <h2 class="govuk-heading-l">Data Sharing Agreements</h2>
+      <p>You need a Data Sharing Agreement before you can access data.</p>
+      <p>If you already have one it will need to include permission to access data using Service Now. Once approved you will be issued with a username.<br>
+      To discuss access call the support team on 0300 303 333 or email enquiries@education.gov.uk</p>
+       
+        
+    
+      
+  </fieldset>
+</div>
+
+<br>
+
+
+          <a href="home1" class="govuk-button show-continue" style="display: inline;">
+      Back
+    </a>
+       
+      </div>
+    </div>
+  </main>
+</div>
+
+
+{% endblock %}

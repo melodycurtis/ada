@@ -4,16 +4,24 @@
   GOV.UK prototype kit
 {% endblock %}
 {% block beforeContent %}
-<div class="govuk-phase-banner">
-    <p class="govuk-phase-banner__content">
-      <strong class="govuk-tag govuk-phase-banner__content__tag">
-        beta
-      </strong>
-      <span class="govuk-phase-banner__text">
-        This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
-      </span>
-    </p>
-  </div>
+  <div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      Beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+  <div class="govuk-body account-info">
+    <div>
+        <span class="your-name" id="bannerUserName">Florence Bridger</span><a class="account-link" href="details" id="signout-link">Sign out</a>
+    </div>
+
+
+</div>
 
 {% endblock %}
 
@@ -55,7 +63,7 @@
                 </div>
 
                 <div class="govuk-grid-column-one-third tile">
-                    <a class="min-height" href="#">
+                    <a class="min-height" href="get-support">
                         <span class="govuk-heading-m heading">Get support</span>
                         <span class="govuk-heading govuk-!-font-size-16">Find training, communities and code libraries</span>
                     </a>
