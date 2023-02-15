@@ -1,0 +1,228 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+{% block beforeContent %}
+  <div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      prototype
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+  
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">News and updates </h1>
+
+      </div>
+</div>
+
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-quarter">
+    
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="width-20">
+    Content type
+  </label>
+  
+</div>
+
+
+
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset">
+        
+        <div class="govuk-checkboxes govuk-checkboxes--medium">
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
+            <label class="govuk-label govuk-checkboxes__label" for="organisation">
+             Data updates
+            </label>
+          </div>
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+            <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
+              Releases
+            </label>
+          </div>
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="organisation-3" name="organisation" type="checkbox" value="MOD">
+            <label class="govuk-label govuk-checkboxes__label" for="organisation-3">
+              Announcements
+            </label>
+          </div>
+          
+
+          <!--<div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="organisation-4" name="organisation" type="checkbox" value="DfT">
+            <label class="govuk-label govuk-checkboxes__label" for="organisation-4">
+             Approved
+            </label>
+          </div>
+
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="organisation-4" name="organisation" type="checkbox" value="DfT">
+            <label class="govuk-label govuk-checkboxes__label" for="organisation-4">
+             Registered
+            </label>
+          </div>
+
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="organisation-4" name="organisation" type="checkbox" value="DfT">
+            <label class="govuk-label govuk-checkboxes__label" for="organisation-4">
+             Rejected
+            </label>
+          </div>
+
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="organisation-4" name="organisation" type="checkbox" value="DfT">
+            <label class="govuk-label govuk-checkboxes__label" for="organisation-4">
+             Timed out
+            </label>
+          </div>
+        </div>-->
+      </fieldset>
+    </div>
+  </div>
+  <div class="govuk-grid-column-three-quarters">  
+  
+          <h2 class="govuk-heading-m"></h2>
+          
+  
+  
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="col"> </th>
+                <th class="govuk-table__header" scope="col"> </th>
+              </tr>
+            </thead>
+            
+            
+            
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                  <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+                    <div class="govuk-notification-banner__header">
+                      <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+                        Important
+                      </h2>
+                    </div>
+                    <div class="govuk-notification-banner__content">
+                      <p class="govuk-notification-banner__heading">Major incident: PDR reboot - 10 October 2022</p>
+                      <h3 class="govuk-heading-m govuk-!-margin-bottom-3">
+                        <a href="major-incident" class="govuk-link govuk-link--no-visited-state">
+                          Updating the securtiy certificates on the PDR
+                        </a></h3>
+                        <p>This will affect PowerBI and RShiny users at 2.30pm this afternoon
+                        </p>
+                    </div>
+                  </div> 
+                  
+                </td>
+                
+              </tr>
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                  <h3 class="govuk-heading-m govuk-!-margin-bottom-2"> <a class=“govuk-link--no-visited-state” href=“”>
+                    Phonics 2022 final data</a></h3>
+                  <p>
+                      Final data is now available on the PDR<br>
+                  02 August 2022</p>
+                </td>
+                
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                  <h3 class="govuk-heading-m govuk-!-margin-bottom-2"> <a class=“govuk-link--no-visited-state” href=“”>
+                    Missing - nearest school variables</a></h3>
+                    <p>
+                      I'm using the January 2022 pupil census [Teir0] to look at pupils nearest schools<br>
+                   but noticed the variables [DistNearSch] and [NearSchLAEstab] are N/A for some pupils
+                      in mainstream free schools. These pupils all have addess information and a URN,<br>
+                      do you know why these might be missing?<br>
+                    
+                  11 July 2022</p>
+                   
+                </td>
+                
+                
+
+              </td>
+            </tr>
+           
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                  <h3 class="govuk-heading-m govuk-!-margin-bottom-3"> <a class=“govuk-link--no-visited-state” href=“”>
+                    Action: Complete this PDR user questionnaire</a></h3>
+                    <p>
+                      LDS colleagues have asked PDR users for your help to gather information about how PDR users use NPDAAT data.<br>
+                    The questionnaire is to get initial information and be used to follow up more details as needed.<br>
+                    It's open now and will close on 12 December 2022<br>
+                    Questionnaire link
+                 30 November 2022</p>
+                </td>
+                
+                
+                
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                  <h3 class="govuk-heading-m govuk-!-margin-bottom-2"> <a class=“govuk-link--no-visited-state” href=“”>
+                    ILR 2223 SN06 and LARS 2223 SN06 datasets have been refreshed in the Analysis and Modelling area.</a></h3>
+                    <p>
+                      The Reference data has been refreshed as well.<br>
+                    
+                  01 June 2022</p>
+                </td>
+                
+                
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                  <h3 class="govuk-heading-m govuk-!-margin-bottom-2"> <a class=“govuk-link--no-visited-state” href=“”>
+                    Post 16 School Census Standard files have now passed through the quality checks</a></h3>
+                    <p>
+                      This data is now published on the Analyse and Modelling (A&M) platform and can be used subject to the necessary data sharing agreements <br>
+                    
+                    
+                  20 May 2022</p>
+                </td>
+                
+                
+              </tr>
+          
+              
+            </tbody>
+          </table>
+
+  
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+  
+
+         
+      
+
+
+{% endblock %}
