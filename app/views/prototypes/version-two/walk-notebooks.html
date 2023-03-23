@@ -32,12 +32,13 @@
         Starting with Databricks Notebooks
       </h1>
     </legend>
-    <h2 class="govuk-heading-l"></h2>
+  </fieldset>
+</div>
+    
     <p>Notebooks are a tool for creating data science and machine learning workflows. They provide real-time co-authoring in multiple languages,
       automatic versioning, and data visualizations.</p>
     
-  </fieldset>
-</div>
+  
 <h2 class="govuk-heading-m">Requirements</h2>
 <p>You are logged in to Databricks and you are in the Data Science and Engineering workspace.</p>
 
@@ -62,11 +63,85 @@
       <li>Click Workspace.</li>
       <li>Click on the ... Icon.</li>
     </ol>
-    <p>The Workspace root folder is a container for all of our organization’s Azure Databricks static assets.</p>
+    <p>The Workspace root folder is a container for all of our organization's Azure Databricks static assets.</p>
 
 
   <br><br>
-          <a href="get-started" class="govuk-button show-continue" style="display: inline;">
+  <p class="govuk-body">Within the Workspace root folder:</p>
+<ul class="govuk-list govuk-list--bullet">
+  <li>Shared is for sharing objects across our organization. All users have full permissions for the
+    objects in Shared.</li>
+  <li>Users contains a folder for each user.</li>
+  
+</ul>
+
+<br><br>
+<h2 class="govuk-heading-m">Create a notebook in any folder</h2>
+<p>We can create a new notebook in any folder. For example - in the Shared folder, following these steps:</p>
+<ul class="govuk-list govuk-list--bullet">
+  <li>In the sidebar, click Workspace. Do one of the following:</li>
+  <br>
+  <p>Next to any folder, click the on the right side of the text and
+    select Create &gt; Notebook.</p>
+    <p>In the workspace or a user folder, click and select Create &gt; Notebook.</p>
+  <li>Follow steps 2 through 4 in Use the Create button.</li>
+  
+</ul>
+<br><br> 
+
+<h2 class="govuk-heading-m">Open notebook</h2>
+<p>In our workspace, click a . The notebook path displays when we hover over the notebook title.</p>
+<p>Folders and Workspace object operations for information about how to access the workspace menu and
+  delete notebooks or other items in the workspace.</p>
+
+
+<br><br>
+<h2 class="govuk-heading-m">How to Copy notebook path</h2>
+<p>To copy a notebook file path without opening the notebook, right-click the notebook name or click the 
+  to the right of the notebook name and select Copy File Path.</p>
+
+<br><br>
+<h2 class="govuk-heading-m">Notebook rename</h2>
+
+<p>To change the title of an open notebook, click the title and edit inline or click File &gt; Rename.</p>
+
+<br><br>
+<h2 class="govuk-heading-m">How to Switch to a different workspace</h2>
+<p>If we have access to more than one workspace in the same account, we can quickly switch among them.</p>
+<ol class="govuk-list govuk-list--number">
+  <li>Click the workspace name in the top bar of the Azure Databricks workspace.</li>
+  <li>Select a workspace from the drop down to switch to it.</li>
+</ol>
+
+<br><br>
+<h2 class="govuk-heading-m">Code languages in notebooks</h2>
+<p>Click the drop down as above mentioned screenshot and select the language to use.</p>
+
+<p>Choose one of the following methods to create a new query using the SQL editor:
+  <ul class="govuk-list govuk-list--bullet">
+    <li>Click SQL Editor in the sidebar.</li>
+    <li>Click  New in the sidebar and select Query.</li>
+    <li>In the sidebar, click  Queries and then click + Create Query.</li>
+    <li>In the sidebar, click  Workspace and then click + Create Query.</li>
+  </ul>
+
+  <p>The SQL editor displays.</p>
+  <br><br>
+  <h2 class="govuk-heading-m">Browse data objects in SQL editor</h2>
+<p>If we have read permission, the schema browser in SQL editor displays the available databases and tables. We
+  can also browse data objects in Data Explorer.</p>
+
+  <ul class="govuk-list govuk-list--bullet">
+    <li>To see a data object you must be the data object owner or be granted privileges to the
+      object.</li>
+    <li>To refresh the schema, click</li>
+  </ul>
+  
+
+
+
+
+<br><br><a href="get-started" class="govuk-button show-continue" style="display: inline;">
       Back
     </a>
        
