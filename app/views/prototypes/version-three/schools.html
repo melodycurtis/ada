@@ -1,0 +1,205 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+{% block beforeContent %}
+  <div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      Beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+  
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Schools reports </h1>
+
+      </div>
+</div>
+
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-quarter">
+    <h2 class="govuk-heading-m">Filters</h2>
+
+    <form action="/form-handler" method="post" novalidate>
+
+      <input type="hidden" name="answers-checked" value="true">
+
+      <a href="#" class="govuk-button show-continue">
+     Apply filters
+</a>
+
+
+
+
+
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
+        
+        </legend>
+        <div class="govuk-checkboxes govuk-checkboxes--small">
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="organisation" name="organisation" type="checkbox" value="hmrc">
+            <label class="govuk-label govuk-checkboxes__label" for="organisation">
+             PowerBI
+            </label>
+          </div>
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="organisation-2" name="organisation" type="checkbox" value="employment-tribunal">
+            <label class="govuk-label govuk-checkboxes__label" for="organisation-2">
+              RShiny
+            </label>
+          </div>
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="organisation-3" name="organisation" type="checkbox" value="MOD">
+            <label class="govuk-label govuk-checkboxes__label" for="organisation-3">
+              Excel workbooks
+            </label>
+          </div>
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="organisation-4" name="organisation" type="checkbox" value="DfT">
+            <label class="govuk-label govuk-checkboxes__label" for="organisation-4">
+             Static documents
+            </label>
+          </div>
+
+          
+        
+        </div>
+      </fieldset>
+    </div>
+  </div>
+  <div class="govuk-grid-column-three-quarters">  
+  
+          <h2 class="govuk-heading-m"></h2>
+          
+  
+  
+          <table class="govuk-table">
+            <thead class="govuk-table__head">
+              <tr class="govuk-table__row">
+                <th class="govuk-table__header" scope="col"> </th>
+                <th class="govuk-table__header" scope="col"> </th>
+              </tr>
+            </thead>
+            
+            
+            
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                  
+                  <h3 class="govuk-heading-m govuk-!-margin-bottom-3">
+                    <a href="https://app.powerbi.com/groups/me/apps/7ad7041d-c815-4c04-a4c5-e879c71aeee2/reports/[…]f0d5-4a21-b3c5-2fc32ea40d0d/ReportSection50c2b93695448b044147" target="_blank"> 
+                      Percentage of KS2 pupils achieving the expected standard 
+                    </a></h3>
+                    <p><strong>PowerBI </strong> - Disadvantage report<br>
+                    Report owner: <a href="mailto:robert.smith@education.gov.uk">robert.smith@education.gov.uk</a><br>
+                    Team: Counter fraud<br>
+                 Last published: 18 August 2020</p>
+                </td>
+                <td class="govuk-summary-list__actions">
+                
+                  <!--<strong class="govuk-tag govuk-tag--grey">
+                    image
+                  </strong>-->
+          
+                </td>
+              </tr>
+              
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                  <h3 class="govuk-heading-m govuk-!-margin-bottom-2"> <a class=“govuk-link--no-visited-state” href=“”>
+                    Percentage of LA's rated inadequate for CSE services</a></h3>
+                    <p><strong>RShiny </strong> - Inadequate report<br>
+                      Report owner: <a href="mailto:robert.smith@education.gov.uk">robert.smith@education.gov.uk</a><br>
+                      Team: Counter fraud<br>
+                   Last published: 18 August 2020</p>
+                </td>
+                <td class="govuk-summary-list__actions">
+                 
+          
+                </td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                  <h3 class="govuk-heading-m govuk-!-margin-bottom-2"> <a class=“govuk-link--no-visited-state” href=“”>
+                    Percentage of KS2 pupils achieving the expected standard</a></h3>
+                    <p><strong>RShiny </strong> - Inadequate report<br>
+                      Report owner: <a href="mailto:robert.smith@education.gov.uk">robert.smith@education.gov.uk</a><br>
+                      Team: Counter fraud<br>
+                   Last published: 18 August 2020</p>
+                   
+                </td>
+                
+                <td class="govuk-summary-list__actions">
+                  
+          
+                </td>
+
+              </td>
+            </tr>
+           
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                  <h3 class="govuk-heading-m govuk-!-margin-bottom-3"> <a class=“govuk-link--no-visited-state” href=“”>
+                    Ethnicity</a></h3>
+                    <p><strong>RShiny </strong> - Ethnicity report<br>
+                      Report owner: <a href="mailto:robert.smith@education.gov.uk">robert.smith@education.gov.uk</a><br>
+                      Team: Counter fraud<br>
+                   Last published: 18 August 2020</p>
+                </td>
+                
+                <td class="govuk-summary-list__actions">
+                  
+          
+                </td>
+              </tr>
+              <tr class="govuk-table__row">
+                <td class="govuk-table__cell">
+                  <h3 class="govuk-heading-m govuk-!-margin-bottom-2"> <a class=“govuk-link--no-visited-state” href=“”>
+                    Percentage of LA's rated inadequate for CSE services</a></h3>
+                    <p><strong>RShiny </strong> - Disadvantage report<br>
+                      Report owner: <a href="mailto:robert.smith@education.gov.uk">robert.smith@education.gov.uk</a><br>
+                      Team: Counter fraud<br>
+                   Last published: 18 August 2020</p>
+                </td>
+                
+                <td class="govuk-summary-list__actions">
+                  
+          
+                </td>
+                                             
+            </tbody>
+          </table>
+  
+        
+          
+  
+        </div>
+      </div>
+    </main>
+  </div>
+</div>
+
+  
+
+         
+      
+
+
+{% endblock %}
