@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+{% block beforeContent %}
+  <div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      Beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+  <div class="govuk-body account-info">
+    <div>
+        <span class="your-name" id="bannerUserName">Florence Bridger</span><a class="account-link" href="details" id="signout-link">Sign out</a>
+    </div>
+
+
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+            
+
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <h1 class="govuk-fieldset__heading">
+        Get support
+      </h1>
+    </legend><br>
+    <h2 class="govuk-heading-l">Join a community</h2>
+    <p>You can get help and advice by joining these communities on Teams:</p>
+      
+      <p> <a href="https://teams.microsoft.com/l/channel/19%3a1fa4c4c760424b659a5462ffab7a17c7%40thread.t[…]-81b7cdd2ebe1&tenantId=fad277c9-c60a-4da1-b5f3-b3b8b34a82f9" target="_blank">DfE R community</a>
+       <p> <a href= "">DfE analyst network</a></p>
+       <p>DfE python community</p>
+       <p>PDR User group</p>
+       <p></p>
+       <p></p>
+
+       <h2 class="govuk-heading-l">Get training</h2>
+      
+       <h3 class="govuk-heading-m">Databricks</h3>
+       <p><a href= "https://www.databricks.com/" target="_blank">Databricks</a> is a collaborative analytics platform that supports SQL, Python and R languages for the analysis of big data in the cloud.</p>
+       <h3 class="govuk-heading-m">RStudio</h3>
+        <p><a href= "https://posit.co/" target="_blank">RStudio</a> is a development environment for the R statistical language. It is made by statisticians for statisticians to make your work more productive.</p>
+
+      <p></p>
+      <p></p>
+
+       <h2 class="govuk-heading-l">Access data</h2>
+      <p>All data access is managed via ServiceNow. Over time you will be able to request access in the Data Discovery Platform or the Databricks application.</p><p></p>
+      <h2 class="govuk-heading-l">Contact us</h2>
+        <p>To discuss access call the support team on 0300 303 333 or email enquiries@education.gov.uk</p>
+       
+  </fieldset>
+</div>
+
+<br>
+
+
+          <a href="home1" class="govuk-button show-continue" style="display: inline;">
+      Back
+    </a>
+       
+      </div>
+    </div>
+  </main>
+</div>
+
+
+{% endblock %}
