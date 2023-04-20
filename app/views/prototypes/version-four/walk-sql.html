@@ -21,7 +21,7 @@
 
 
   <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds">
+    <div class="govuk-grid-column-two-thirds">
             
 
 
@@ -29,124 +29,49 @@
   <fieldset class="govuk-fieldset" aria-describedby="">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
       <h1 class="govuk-fieldset__heading">
-        Getting started using SQL Editor
+        Getting started with SQL Editor
       </h1>
     </legend>
   </fieldset>
 </div>
+
     
-<h2 class="govuk-heading-m">Requirements</h2>
-<p>When you're logged in to Databricks - make sure you're in the <STRONG>Data Science and Engineering</STRONG> workspace. Select the <img src="/public/images/workspace-icon.png" class="app-walkthrough-icon"> workspace type from the top left sidebar.</p>
-<p><img src="/public/images/workspace-select.png" class="app-walkthrough-image"></p>
+  
+<h2 class="govuk-heading-m">First steps</h2>
+<p>Sign in to <a class="govuk-link" href="https://adb-4231618882514780.0.azuredatabricks.net/login.html?o=4231618882514780" target="_blank">Databricks</a> and make sure you are in the SQL <img src="/public/images/sql-icon2.png" class="app-walkthrough-icon"> <STRONG>workspace</STRONG>.</p> 
+  
+<p><img src="/public/images/sql1.png" class="app-walkthrough-image"></p>
 <br>
-    
-  
-
-<h2 class="govuk-heading-m">How to create a query in SQL editor</h2>
-<p>On the left sidebar - select the SQL area.</p>
-
-<p><img src="/public/images/sql-area.png" class="app-walkthrough-image"></p>
-    <p>Click <img src="/public/images/plus-icon.png" class="app-walkthrough-icon"> New in the sidebar and select Query.</p>
-    <p><img src="/public/images/sql-new.png" class="app-walkthrough-image"></p>
-    <p>Type SELECT in the box and start typing. The browser will suggest available databases and tables.</p>
-    
-  
-
- 
-  <p><img src="/public/images/sql-query1.png" class="app-walkthrough-image"></p>
-
-  <br><br>
-  <h2 class="govuk-heading-m">How to consruct a query</h2>
-<p>You can construct a query by inserting elements from the schema browser or typing in the SQL editor.</p>
 
 
-  <ul class="govuk-list govuk-list--bullet">
-    <li>To insert an object from the schema browser into the SQL editor, click the double arrow on the right of a data object.</li>
-    <li>Type <STRONG>wer</STRONG> query in the SQL editor.  </li>
-    
-  </ul>
- <p>The SQL editor supports autocomplete. As you type, autocomplete suggests valid completions. For example, if a valid completion at the cursor location is a column, autocomplete suggests a column name. If we type select * from table as t where t., autocomplete recognizes that t is an alias for table and suggests the columns inside table.</p> 
-<p><img src="/public/images/sql-query1.png" class="app-walkthrough-image"></p>
-<br><br>
-<h2 class="govuk-heading-m">How to edit multiple queries</h2>
-  <p>By default, the SQL editor uses tabs so we can edit multiple queries at the same time.<br>
-    To open a new tab, click +, then select <STRONG>Create new query</STRONG> or <STRONG>Open existing query</STRONG>. <br>
-     Click <STRONG>Open existing query</STRONG> to see a list of saved queries.<br>
-     Click<STRONG> All Queries</STRONG>  or <STRONG>Favorites</STRONG> to filter the list of queries. <br>In the row containing the query we want to view, click <STRONG>Open</STRONG>.</p>
-  <h2 class="govuk-heading-m">Browse data objects in SQL editor</h2>
-<p>You can browse data objects in Data Explorer.</p>
+<p>This will change the menu items on the left sidebar.</p>
+<p>On the left sidebar select <STRONG>SQL Editor</STRONG>.</p>
+<p>This takes you straight in to a new query. It will look similar to Microsoft SQL Server Management Studio.(SSMS)</p>
 
-  <ul class="govuk-list govuk-list--bullet">
-    <li>To see a data object you must be the data object owner or be granted privileges to the
-      object.</li>
-    <li>To refresh the schema, click <img src="/public/images/circle-icon.png" class="app-walkthrough-icon"> </li>
-    <li>To show the columns in a table, click the table.</li>
-  </ul>
-
-
-<br><br>
-<h2 class="govuk-heading-m">Terminate a query</h2>
-<p>To terminate a query while it is executing, click <STRONG>Cancel</STRONG>.</p>
-<br><br>
-
-<h2 class="govuk-heading-m">Set query description and view query information</h2>
-<p>To set a query description:</p>
+<h2 class="govuk-heading-m">Create a Query</h2>
 <ol class="govuk-list govuk-list--number">
-  <li>Click the kebab context menu <img src="/public/images/kebab.png" class="app-walkthrough-icon"> next to the query and click <STRONG>Edit query info</STRONG>.</li>
-  <li> In the <STRONG>Description</STRONG> text box, enter a description and then click <STRONG>Save</STRONG>.
-  </li>
+  <li> sql</STRONG>.</li>
+  
+  <p><img src="/public/images/sql-hello.png" class="app-walkthrough-image"></p><br>
+  
+  <li>Enter a name and select a language. Select a cluster. If you can't see one - you can create one later. Click on <STRONG>Create</STRONG>.</li>
+
+    
+   
+    
+    <p><img src="/public/images/notebook4.png" class="app-walkthrough-image"></p><br>
+    <li>Your new Notebook will open - and you can start working.</li>
+
+
+<p><img src="/public/images/new-note1.png" class="app-walkthrough-image"></p><br>
+<li>Click on the <STRONG>Run all</STRONG> button on the top bar to run your code.</li>
+<p><img src="/public/images/new-note2.png" class="app-walkthrough-image"></p><br>
 </ol>
 
 
-<br>
-<p>To view query information:</p>
-<p>To view when a query was created or updated, click the <img src="/public/images/kebab.png" class="app-walkthrough-icon"> next to the query and click <STRONG>Edit query info</STRONG>.</p>
-
-<p><img src="/public/images/sql-edit.png" class="app-walkthrough-image"></p>
-<br><br>
-<h2 class="govuk-heading-m">Revert to saved query</h2>
-<p>When you edit a query, a <STRONG>Revert</STRONG> changes option appears in the context menu for the query.
-  You can click <STRONG>Revert</STRONG> to go back to the saved version. Changes are saved to browser storage when you leave, but the browser may still display warnings about losing work.</p> <p><img src="/public/images/sql-revert.png" class="app-walkthrough-image"></p>
-  <br><br>
-<h2 class="govuk-heading-m">Move a query or restore from trash</h2>
-  
-  <p>To move a query to trash:</p>
-  <ul class="govuk-list govuk-list--bullet">
-    <li>Click the kebab context menu <img src="/public/images/kebab.png" class="app-walkthrough-icon"> next to the query in SQL editor and select <STRONG>Move to trash</STRONG></li>
-    <li>Click <STRONG>Move to trash</STRONG> to confirm</li>
-  </ul>
-    
-  
-
-  <p>To restore a query from trash:</p>
-<ol class="govuk-list govuk-list--number">
-  <li>In the All-Queries list, click <img src="/public/images/trash.png" class="app-walkthrough-icon"></li>
-  <li> Click a query.</li>
-  <li> Click the kebab context menu <img src="/public/images/kebab.png" class="app-walkthrough-icon"> at the top-right of the SQL editor and click <STRONG>Restore</STRONG>.</li>
-</ol>
-  
-<br><br>
-
-<h2 class="govuk-heading-m">Copy a query</h2>
-<p>To create a copy of a query, click the kebab context menu <img src="/public/images/kebab.png" class="app-walkthrough-icon"> and click <STRONG>Clone</STRONG>:</p>
 
 
-<br><br>
-
-<h2 class="govuk-heading-m">Download a query result</h2>
-<p>You can download a query result as a CSV, TSV, or Excel file. You can download up to approximately 1GB of results data from Databricks SQL in CSV and TSV format, and up to 100,000 rows to an Excel file.</p>
-  <ol class="govuk-list govuk-list--number">
-    <li>Click the kebab context menu <img src="/public/images/kebab.png" class="app-walkthrough-icon"> for a tab in the results pane.</li>
-    
-    <li> Select <STRONG>Download CSV | TSV | Excel </STRONG>.</li>
-  </ol>
-    
-  <p><img src="/public/images/sql-csv.png" class="app-walkthrough-image"></p>
-  
-  
-
-<br><br>
-<a href="get-started" class="govuk-button show-continue" style="display: inline;">
+<br><a href="get-started" class="govuk-button show-continue" style="display: inline;">
       Back
     </a>
        
