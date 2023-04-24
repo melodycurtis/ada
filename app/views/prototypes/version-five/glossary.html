@@ -1,0 +1,187 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+{% block beforeContent %}
+  <div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+
+
+  
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds-from-desktop">
+
+        <h1 class="govuk-heading-xl">
+          List of terminology</h1>
+
+        <h2 class="govuk-heading-m"></h2>
+
+        <!--<p>This service provides one place for analysts to access the systems they need to analyse and model data.</p>
+        <p>It's available to anyone who works for the Department of Education as long as you're connected to the DfE network.</p>-->
+
+        <table class="govuk-table">
+
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              
+              <th class="govuk-table__header" scope="col">Term</th>
+              <th class="govuk-table__header" scope="col">Definition</th>
+              
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              
+              <td class="govuk-table__cell" scope="row"><STRONG>Analyst Workbench</STRONG></td>
+              
+              <td class="govuk-table__cell" scope="row">The toolkit that allows analysts to perform analysis and modelling of data. This is the internal functional name for Databricks, a commercially licensed cloud-based platform.</p>
+                </td>
+              
+            </tr>
+            <tr class="govuk-table__row">
+            
+              <td class="govuk-table__cell" scope="row"> <STRONG>Analytical Data Access (ADA)</STRONG>
+                
+              </td>
+              <td class="govuk-table__cell" scope="row">
+                The internal DfE service that allows staff to find data and access analytical tools.</td>
+              
+            </tr>
+
+            <tr class="govuk-table__row">
+              
+              <td class="govuk-table__cell" scope="row"><STRONG>Data sets</STRONG></a>
+                  </td>
+              <td class="govuk-table__cell" scope="row">
+                A collection of related sets of information. For example - a dataset about pupil attendance which includes pupil, school, and attendance information sets.</td>
+              
+            </tr>
+
+            <tr class="govuk-table__row">
+              
+              <td class="govuk-table__cell" scope="row"><STRONG>Databricks</STRONG></a>
+                  </td>
+              <td class="govuk-table__cell" scope="row">
+                A cloud based data engineering and analytics platform which DfE has licensed. A suite of tools to support data engineers and analysts to store data and tooling - to query and analyse large data sets.</td>
+              
+            </tr>
+
+            <tr class="govuk-table__row">
+              
+              <td class="govuk-table__cell" scope="row"><STRONG>Delta file</STRONG></a>
+                  </td>
+              <td class="govuk-table__cell" scope="row">
+                
+The format of the way data is stored in the cloud-based storage delta lake. A delta file compresses information and only makes changes to the parts of the file that have changed when you need to copy, download or upload it.</td>
+              
+            </tr>
+
+            <tr class="govuk-table__row">
+              
+              <td class="govuk-table__cell" scope="row"><STRONG>Delta lake</STRONG></a>
+                  </td>
+              <td class="govuk-table__cell" scope="row">
+                
+A storage layer that provides the foundation for storing data and table in the Databricks platform. Delta lake is open source software and it is the default storage format for all operations on Databricks.</td>
+              
+            </tr>
+
+            <tr class="govuk-table__row">
+              
+              <td class="govuk-table__cell" scope="row"><STRONG>Metadata</STRONG></a>
+                  </td>
+              <td class="govuk-table__cell" scope="row">
+                
+A set of data that describes and information about other data. For example school metadata might include the school name, identifier number, address.</td>
+              
+            </tr>
+
+            <tr class="govuk-table__row">
+              
+              <td class="govuk-table__cell" scope="row"><STRONG>Private beta</STRONG></a>
+                  </td>
+              <td class="govuk-table__cell" scope="row">
+                
+                The stage of delivery in a project or service where the service is available to a limited number of users - so that it can be thoroughly tested and improved until it is released to a wider audience. This is part of the gov.uk Service Standard.</td>
+              
+            </tr>
+
+            <tr class="govuk-table__row">
+              
+              <td class="govuk-table__cell" scope="row"><STRONG>Python</STRONG></a>
+                  </td>
+              <td class="govuk-table__cell" scope="row">
+                
+A programming or coding language which the analyst community use to develop their models for analysis. It is widely used in data analysis and data science for importing, analysing and visualisation of data.</td>
+              
+            </tr>
+
+            <tr class="govuk-table__row">
+              
+              <td class="govuk-table__cell" scope="row"><STRONG>R</STRONG></a>
+                  </td>
+              <td class="govuk-table__cell" scope="row">
+                A programming or coding language and environment which the analyst community use to develop their models for analysis. It has features which are useful for statistical analysis and graphical representation.</td>
+              
+            </tr>
+
+            <tr class="govuk-table__row">
+              
+              <td class="govuk-table__cell" scope="row"><STRONG>Reports and dashboards</STRONG></a>
+                  </td>
+              <td class="govuk-table__cell" scope="row">
+                
+A feature in the ADA service that provides a library of reports and dashboards that can be used by DfE staff to find and query data. In some cases - access will be restricted to authorised users only. The ambition is to grow this library over time. This area also provides navigation to the Explore Education Statistics public-facing portal.</td>
+              
+            </tr>
+
+            <tr class="govuk-table__row">
+              
+              <td class="govuk-table__cell" scope="row"><STRONG>SQL</STRONG></a>
+                  </td>
+              <td class="govuk-table__cell" scope="row">
+                Structure Query Language (SQL) is a programming or coding language for use in data and database manipulation.</td>
+              
+            </tr>
+
+  
+          </tbody>
+          </table> 
+        
+        <br>
+        <a href="about" class="govuk-button show-continue" style="display: inline;">
+          Back
+        </a>
+       
+          
+
+      
+
+      </div>
+    </div>
+  </main>
+</div>
+
+</fieldset>
+       
+      </div>
+    </div>
+  </main>
+</div>
+
+
+{% endblock %}
