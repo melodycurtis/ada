@@ -1,0 +1,67 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+{% block beforeContent %}
+  
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      prototype
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+ 
+  <a href="#" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+
+
+        <div class="govuk-width-container">
+  
+
+  <h1 class="govuk-heading-m">Impact Training Limited
+  <span class="govuk-caption-m">UKPRN: 00012345</span></h1>
+
+
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        
+          
+
+
+          <div class="govuk-form-group">
+
+      <h1 class="govuk-heading-xl">Download the template</h1>
+
+<p>
+ Enter your staff information in the template. Then come back to upload the completed file. 
+</p>
+<br>
+
+<a class="govuk-link" href="/public/javascripts/FEWorkforce.xls" download>Download the FE staff template</a>
+<!--/public/javascripts/[then the name of your file to download]-->
+
+
+</div><br>
+
+
+
+          <a href="mis" class="govuk-button show-continue" style="display: inline;">
+      Back
+    </a>
+       
+      </div>
+    </div>
+  </main>
+</div>
+
+
+{% endblock %}
