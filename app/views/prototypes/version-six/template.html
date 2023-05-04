@@ -8,7 +8,7 @@
 <div class="govuk-phase-banner">
   <p class="govuk-phase-banner__content">
     <strong class="govuk-tag govuk-phase-banner__content__tag">
-      prototype
+      beta
     </strong>
     <span class="govuk-phase-banner__text">
       This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
@@ -16,8 +16,6 @@
   </p>
 </div>
 
- 
-  <a href="#" class="govuk-back-link">Back</a>
 {% endblock %}
 
 {% block content %}
@@ -25,35 +23,107 @@
 
         <div class="govuk-width-container">
   
-
-  <h1 class="govuk-heading-m">Impact Training Limited
-  <span class="govuk-caption-m">UKPRN: 00012345</span></h1>
-
-
   <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
         
+        <h1 class="govuk-heading-xl">Datasets available in Databricks </h1>   
+
+        <table class="govuk-table">
+          <caption class="govuk-table__caption govuk-table__caption--m">Datasets already migrated</caption>
+          <thead class="govuk-table__head">
+            <tr class="govuk-table__row">
+              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Database</th>
+              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Schema</th>
+              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Tables</th>
+              <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Views</th>
+            </tr>
+          </thead>
+          <tbody class="govuk-table__body">
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">PDR</th>
+              <td class="govuk-table__cell">Tier0</td>
+              <td class="govuk-table__cell">NPDPR.s_PupilMatchingRef</td>
+                <td class="govuk-table__cell">CensusAbsence1Term_MasterView</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header"></th>
+              <td class="govuk-table__cell"></td>
+              <td class="govuk-table__cell">NPDSC.CensusAbsence
+                </td>
+              <td class="govuk-table__cell">CensusAbsence2Term_MasterView</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header"></th>
+              <td class="govuk-table__cell"></td>
+              <td class="govuk-table__cell">NPDGeo.GEO_NSP_ALL_MasterView
+                </td>
+              <td class="govuk-table__cell">CensusAbsence3Term_MasterView</td>
+            </tr>
+    
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header"></th>
+              <td class="govuk-table__cell"></td>
+              <td class="govuk-table__cell">NPDSC.CensusSeasonSSA
+                
+                </td>
+              <td class="govuk-table__cell">CensusSeasonSSA_MasterView</td>
+            </tr>
+    
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header"></th>
+              <td class="govuk-table__cell"></td>
+              <td class="govuk-table__cell">
+                </td>
+              <td class="govuk-table__cell">[NPDGeo].[GEO_NSPD]</td>
+            </tr>
+    
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header"></th>
+              <td class="govuk-table__cell"></td>
+              <td class="govuk-table__cell">
+                </td>
+              <td class="govuk-table__cell">[NPDGeo].[GEO_NSPL]</td>
+            </tr>
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header">A&M > MA_AM_S_PROJECTS</th>
+              <td class="govuk-table__cell"><br>CounterFraud</td>
+              <td class="govuk-table__cell"><br>Data_AS_commitments</td>
+              <td class="govuk-table__cell"></td>
+            </tr>
+    
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header"></th>
+              <td class="govuk-table__cell"></td>
+              <td class="govuk-table__cell">ModelInputs_TrainModel_Provider</td>
+              <td class="govuk-table__cell"></td>
+            </tr>
+    
+            <tr class="govuk-table__row">
+              <th scope="row" class="govuk-table__header"></th>
+              <td class="govuk-table__cell"></td>
+              <td class="govuk-table__cell">ModelInputs_TrainModel_Employer</td>
+              <td class="govuk-table__cell"></td>
+            </tr>
+    
+            
+    
+            
+          </tbody>
+        </table>
           
-
-
-          <div class="govuk-form-group">
-
-      <h1 class="govuk-heading-xl">Download the template</h1>
-
-<p>
- Enter your staff information in the template. Then come back to upload the completed file. 
-</p>
-<br>
-
-<a class="govuk-link" href="/public/javascripts/FEWorkforce.xls" download>Download the FE staff template</a>
-<!--/public/javascripts/[then the name of your file to download]-->
-
-
-</div><br>
+      
 
 
 
+
+
+
+
+
+      </div>
+
+</div>
           <a href="mis" class="govuk-button show-continue" style="display: inline;">
       Back
     </a>
