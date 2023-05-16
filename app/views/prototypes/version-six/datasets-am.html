@@ -27,34 +27,34 @@
   
     <h1 class="govuk-heading-xl">Datasets available in Databricks </h1>
 
-  <nav class="app-sub-navigation" aria-label="Sub navigation">
+    <nav class="app-sub-navigation" aria-label="Sub navigation">
 
-          <ul class="app-sub-navigation__list">
-      
-        
-                <li class="app-sub-navigation__item">
-                  <a class="app-sub-navigation__link"  aria-current="page" href="datasets">A and M</a>
-                </li>
+      <ul class="app-sub-navigation__list">
+  
+    
+            <li class="app-sub-navigation__item">
+              <a class="app-sub-navigation__link"   href="datasets1">A and M</a>
+            </li>
 
-                <li class="app-sub-navigation__item">
-                  <a class="app-sub-navigation__link"  href="datasets-edap">EDAP</a>
-                </li>
+            <li class="app-sub-navigation__item">
+              <a class="app-sub-navigation__link" aria-current="page"  href="datasets-edap">EDAP</a>
+            </li>
 
-                <li class="app-sub-navigation__item">
-                  <a class="app-sub-navigation__link"  href="datasets-pdr">PDR</a>
-                </li>
-              
-            </ul>
-        
-        </nav>
+            <li class="app-sub-navigation__item">
+              <a class="app-sub-navigation__link"  href="datasets-pdr">PDR</a>
+            </li>
+          
+        </ul>
+    
+    </nav>
     <table class="govuk-table">
       <caption class="govuk-table__caption govuk-table__caption--m">Datasets already migrated</caption>
       <thead class="govuk-table__head" class="govuk-table__head govuk-!-font-size-16"></thead>
         <tr class="govuk-table__row">
           <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Database</th>
-          <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Dataset</th>
-          <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Objects</th>
-          <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Uplated</th>
+          <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Schema</th>
+          <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Tables</th>
+          <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Views</th>
         </tr>
       </thead>
       <tbody class="govuk-table__body">
@@ -138,7 +138,32 @@
     
 
 
-    
+    <table class="govuk-table app-table-data">
+      <caption class="govuk-table__caption govuk-table__caption--m">Datasets planned to be migrated next</caption>
+      <thead class="govuk-table__head" class="govuk-table__head govuk-!-font-size-16"></thead>
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Database</th>
+          <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Schema</th>
+          <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Tables</th>
+          <th scope="col" class="govuk-table__header govuk-!-width-one-quarter">Views</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body" class="govuk-table__body govuk-!-font-size-16"></tbody>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">PDR</th>
+          <td class="govuk-table__cell">All Schemas</td>
+          <td class="govuk-table__cell">All Tables </td>
+         <td class="govuk-table__cell">All Views</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">RaDatasets</th>
+          <td class="govuk-table__cell">All Schemas</td>
+          <td class="govuk-table__cell">All Tables</td>
+          <td class="govuk-table__cell">All Views</td>
+        </tr>
+        
+      </tbody>
+    </table>
        
   </div>
 </div>
