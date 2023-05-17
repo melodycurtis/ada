@@ -1,0 +1,160 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+{% block beforeContent %}
+  <div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      Beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service - your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+
+
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+            
+
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <h1 class="govuk-fieldset__heading">
+        Notebooks - load data
+      </h1>
+    </legend>
+  </fieldset>
+</div>
+
+    
+  <h2 class="govuk-heading-m">Find the path to your data</h2>
+  
+<p>Before you start - you will need to know the path to your data to be able to load it. This will be a three part name with a catalog, schema and table.</p> 
+<p>Example: <STRONG>preprod_catalog_p02.ada_demo.csc_data</STRONG></p>
+<p><img src="/public/images/data-path-stroke2.png" class="app-notebook-image"></p>
+<p>Select <STRONG>Data</STRONG> from the left sidebar - but make sure to open it in a new tab or window - so you can carry on working in the Notebook you've created.</p>
+
+<p><img src="/public/images/load-side.png" class="app-walkthrough-image"></p>
+
+<br>
+
+<ol class="govuk-list govuk-list--number">
+  <li>The catalogs you have access to will be displayed here. <STRONG>Pre prod</STRONG> and <STRONG>Prod </STRONG>is where the real data sits. You may want to work in <STRONG>Preprod</STRONG> using real data - but not affecting the live service.</li>
+  
+  <p><img src="/public/images/load-data2.png" class="app-walkthrough-image"></p><br>
+  
+  <li>You will see schemas in each catalog. Select the schema in your path.</li>
+    
+    
+
+    <p><img src="/public/images/table.png" class="app-walkthrough-image"></p><br>
+
+<li>Find your table and select it. Then copy the path of the data you've selected.</li>
+<p><img src="/public/images/load-data-tables.png" class="app-walkthrough-image"></p><br>
+<li>Go back to your Notebook in the other tab or window that says 'Hello World'.</li>
+<p><img src="/public/images/new-note3.png" class="app-walkthrough-image"></p><br>
+<li>Hover over the bottom of the cell and click on the plus + icon to create a new cell.</li>
+<p><img src="/public/images/new-cell2.png" class="app-walkthrough-image"></p>
+<li>Paste the path of your data into the cell.</li>
+<li>Type in the commands related to your code and run it.</li>
+<br>
+
+<form action="/form-handler" method="post" novalidate>
+      
+
+  <div class="govuk-tabs" data-module="govuk-tabs">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <ul class="govuk-tabs__list">
+  
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#Python">
+              Python
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#R">
+              R
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#SQL">
+              SQL
+            </a>
+          </li>
+    </ul>
+        <div class="govuk-tabs__panel" id="Python">
+            <h2 class="govuk-heading-l">Python</h2>
+  
+  
+  
+        </div>
+        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="R">
+            <h2 class="govuk-heading-l">R</h2>
+  
+  
+  
+  
+        </div>
+        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="SQL">
+            <h2 class="govuk-heading-l">SQL</h2>
+            
+  
+  
+  <pre class="line-numbers"><code class="language-SQL">
+  <html lang="en-GB">
+  <body>
+      <h1>
+  SELECT TOP(100) *
+  FROM XX.XXX </h1>
+  
+  </body>
+  </html>
+  </code></pre>
+     
+  
+  
+  
+        </div>
+  </div>
+  
+  
+    </form>
+
+    <li>Run your code.</li>
+</ol>
+
+
+<br>
+
+<div class="govuk-button-group">
+            
+  <a href="notebooks-loading-data" class="govuk-button show-continue" style="display: inline;">
+    Next
+  </a>
+  
+  <a href="notebooks-learning" class="govuk-button govuk-button--secondary" style="display: inline;">
+    Back
+  </a>
+  
+  
+
+</div>
+       
+      </div>
+    </div>
+  </main>
+</div>
+
+
+{% endblock %}
