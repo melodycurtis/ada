@@ -23,7 +23,7 @@
 
 <div class="govuk-grid-row">
   
-  <div class="govuk-grid-column-three-quarters">  
+  <div class="govuk-grid-column-full">  
   
     <h1 class="govuk-heading-xl">News and updates </h1>
     
@@ -54,16 +54,23 @@
                 </h2>
               </div>
               <div class="govuk-notification-banner__content">
-                <p class="govuk-notification-banner__heading"> See the datasets now available in
-                </p>
-                <h3 class="govuk-heading-m govuk-!-margin-bottom-3">
+                <span class="govuk-caption-xl">Data in PDR has been moved to the data lake. </span><br>
+               
+                <h3 class="govuk-heading-m govuk-!-margin-bottom-3">If you have access - you will see it in Databricks. <br><br>
                   <a href="datasets" class="govuk-link govuk-link--no-visited-state">
-                    Databricks
+                    Datasets available in Databricks
 
                   </a></h3>
                   
               </div>
             
+          </td>
+          <td class="govuk-summary-list__actions">
+          
+            <button class="govuk-button govuk-button--secondary" data-module="govuk-button">
+              Delete
+            </button>
+    
           </td>
           
         </tr>
@@ -71,9 +78,8 @@
         
       </tbody>
     </table>
-    
-    
-    
+    </div>
+    <div class="govuk-grid-column-three-quarters">  
     
     <table class="govuk-table">
       <thead class="govuk-table__head">
