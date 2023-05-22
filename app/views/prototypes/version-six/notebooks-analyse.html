@@ -1,0 +1,341 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK prototype kit
+{% endblock %}
+{% block beforeContent %}
+  <div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content">
+    <strong class="govuk-tag govuk-phase-banner__content__tag">
+      Beta
+    </strong>
+    <span class="govuk-phase-banner__text">
+      This is a new service - your <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+
+
+{% endblock %}
+
+{% block content %}
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+            
+
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <h1 class="govuk-fieldset__heading">
+        Notebooks - analyse data
+      </h1>
+    </legend>
+  </fieldset>
+</div>
+
+    
+  
+<h2 class="govuk-heading-m">Analyse some data in your workspace</h2>
+<p>Before you start - you will need your data loaded in to your Notebook.</p> 
+<p>If you haven't loaded it - this is explained in <a href="notebooks-loading-data">Loading your data</a></p> 
+<br>
+
+
+<h2 class="govuk-heading-m">Filtering your data</h2>
+<p>Filtering your data first - will improve your performance.</p>
+<form action="/form-handler" method="post" novalidate>
+      
+
+  <div class="govuk-tabs" data-module="govuk-tabs">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <ul class="govuk-tabs__list">
+  
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#Python">
+              Python
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#R">
+              R
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#SQL">
+              SQL
+            </a>
+          </li>
+    </ul>
+        <div class="govuk-tabs__panel" id="Python">
+            <h2 class="govuk-heading-l">print("Hello World")</h2>
+  
+  
+  
+        </div>
+        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="R">
+            <h2 class="govuk-heading-l">print("Hello World")</h2>
+  
+  
+  
+  
+        </div>
+        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="SQL">
+            <h2 class="govuk-heading-l"></h2>
+            
+  
+  
+  <pre class="line-numbers"><code class="language-SQL">
+  <html lang="en-GB">
+  <body>
+      <h1>
+  SELECT "Hello World"
+   </h1>
+  
+  </body>
+  </html>
+  </code></pre>
+     
+  
+  
+  
+        </div>
+  </div>
+  
+  
+    </form>
+
+<br>
+
+<br>
+
+
+<h2 class="govuk-heading-m">Sorting your data</h2>
+<p>Sorting your data will help you view the records most important to you.</p>
+<form action="/form-handler" method="post" novalidate>
+      
+
+  <div class="govuk-tabs" data-module="govuk-tabs">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <ul class="govuk-tabs__list">
+  
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#Python">
+              Python
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#R">
+              R
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#SQL">
+              SQL
+            </a>
+          </li>
+    </ul>
+        <div class="govuk-tabs__panel" id="Python">
+            <h2 class="govuk-heading-l">print("Hello World")</h2>
+  
+  
+  
+        </div>
+        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="R">
+            <h2 class="govuk-heading-l">print("Hello World")</h2>
+  
+  
+  
+  
+        </div>
+        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="SQL">
+            <h2 class="govuk-heading-l"></h2>
+            
+  
+  
+  <pre class="line-numbers"><code class="language-SQL">
+  <html lang="en-GB">
+  <body>
+      <h1>
+  SELECT "Hello World"
+   </h1>
+  
+  </body>
+  </html>
+  </code></pre>
+     
+  
+  
+  
+        </div>
+  </div>
+  
+  
+    </form>
+
+<br>
+
+<br>
+
+
+<h2 class="govuk-heading-m">Agrigating your data</h2>
+<p>Agrigating your data will help to get a broader perspective.</p>
+<form action="/form-handler" method="post" novalidate>
+      
+
+  <div class="govuk-tabs" data-module="govuk-tabs">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <ul class="govuk-tabs__list">
+  
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#Python">
+              Python
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#R">
+              R
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#SQL">
+              SQL
+            </a>
+          </li>
+    </ul>
+        <div class="govuk-tabs__panel" id="Python">
+            <h2 class="govuk-heading-l">print("Hello World")</h2>
+  
+  
+  
+        </div>
+        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="R">
+            <h2 class="govuk-heading-l">print("Hello World")</h2>
+  
+  
+  
+  
+        </div>
+        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="SQL">
+            <h2 class="govuk-heading-l"></h2>
+            
+  
+  
+  <pre class="line-numbers"><code class="language-SQL">
+  <html lang="en-GB">
+  <body>
+      <h1>
+  SELECT "Hello World"
+   </h1>
+  
+  </body>
+  </html>
+  </code></pre>
+     
+  
+  
+  
+        </div>
+  </div>
+  
+  
+    </form>
+
+<br>
+
+<br>
+
+
+<h2 class="govuk-heading-m">Joining your data</h2>
+<p>You will be able to join multiple datasets together.</p>
+<form action="/form-handler" method="post" novalidate>
+      
+
+  <div class="govuk-tabs" data-module="govuk-tabs">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <ul class="govuk-tabs__list">
+  
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#Python">
+              Python
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#R">
+              R
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#SQL">
+              SQL
+            </a>
+          </li>
+    </ul>
+        <div class="govuk-tabs__panel" id="Python">
+            <h2 class="govuk-heading-l">print("Hello World")</h2>
+  
+  
+  
+        </div>
+        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="R">
+            <h2 class="govuk-heading-l">print("Hello World")</h2>
+  
+  
+  
+  
+        </div>
+        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="SQL">
+            <h2 class="govuk-heading-l"></h2>
+            
+  
+  
+  <pre class="line-numbers"><code class="language-SQL">
+  <html lang="en-GB">
+  <body>
+      <h1>
+  SELECT "Hello World"
+   </h1>
+  
+  </body>
+  </html>
+  </code></pre>
+     
+  
+  
+  
+        </div>
+  </div>
+  
+  
+    </form>
+
+<br>
+
+<div class="govuk-button-group">
+            
+  <a href="get-started" class="govuk-button show-continue" style="display: inline;">
+    Back to Getting started
+  </a>
+  
+  
+  
+  
+
+</div>
+       
+      </div>
+    </div>
+  </main>
+</div>
+
+
+{% endblock %}
