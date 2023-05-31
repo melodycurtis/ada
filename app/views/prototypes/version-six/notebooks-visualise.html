@@ -29,7 +29,7 @@
   <fieldset class="govuk-fieldset" aria-describedby="">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
       <h1 class="govuk-fieldset__heading">
-        Notebooks - visualise your data
+        Notebooks - visualize your data
       </h1>
     </legend>
   </fieldset>
@@ -37,16 +37,55 @@
 
     
   
-<h2 class="govuk-heading-m">Visualise data in your Notebook</h2>
+<h2 class="govuk-heading-m">Visualize data in your Notebook</h2>
 <p>Before you start - you will need your data loaded in to your Notebook.</p> 
 <p>If you haven't loaded it - this is explained in <a href="notebooks-loading-data">Loading your data</a></p> 
 <br>
+<p>Databricks offers a quick way to visualize your data in recognised data types.</p><br>
+<p>Use the built in display function to show your data in a tabular form.</p>
+<p>The display function is available in python and R. If you're using SQL your data will automatically be displayed when you execute a query.</p>
 
+<form action="/form-handler" method="post" novalidate>
+      
 
-<h2 class="govuk-heading-m"> your data</h2>
-<p>
-
-<br>
+  <div class="govuk-tabs" data-module="govuk-tabs">
+    <h2 class="govuk-tabs__title">
+      Contents
+    </h2>
+    <ul class="govuk-tabs__list">
+  
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#Python">
+              Python
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#R">
+              R
+            </a>
+          </li>
+          
+    </ul>
+        <div class="govuk-tabs__panel" id="Python">
+            <p>spark_df = spark.read.table('samples.nyctaxi.trips')<br>
+              display(spark_df)</p>
+              
+  
+  
+  
+        </div>
+        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="R">
+            <p>library(SparkR)<br>
+              spark_df <- SparkR::sql("SELECT * FROM samples.nyctaxi.trips")<br>
+              display(spark_df)</p>
+  
+        </div>
+        
+  </div>
+  
+  
+    </form>
+    <br><br>
 
 <div class="govuk-button-group">
             
