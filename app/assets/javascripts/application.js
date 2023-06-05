@@ -75,7 +75,53 @@ $(document).ready(function () {
                 
                 
   });
+// https://highlightjs.org/usage/
 
+ 
+
+hljs.highlightAll();
+
+ 
+
+var snippets = document.getElementsByClassName('app-example__code');
+
+var numberOfSnippets = snippets.length;
+
+ 
+
+for (var i = 0; i < numberOfSnippets; i++) {
+
+    let code = snippets[i]
+
+        .getElementsByTagName('pre')[0]
+
+        .getElementsByTagName('code')[0]
+
+        .innerText;
+
+ 
+
+    let copyCodeButton = snippets[i].getElementsByClassName('app-copy-button')[0];
+
+ 
+
+    copyCodeButton.addEventListener("click", function () {
+
+        navigator.clipboard.writeText(code);
+
+        this.innerText = 'Code copied';
+
+        button = this;
+
+        setTimeout(function () {
+
+            button.innerText = 'Copy code';
+
+        }, 3500)
+
+    });
+
+}
   
 
 })
