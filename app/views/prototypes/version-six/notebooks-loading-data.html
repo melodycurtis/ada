@@ -67,57 +67,7 @@
 <li>Type in the load commands related to your language and copy the path to your data in to the cell.</li>
 <br>
 
-<form action="/form-handler" method="post" novalidate>
-      
 
-  <div class="govuk-tabs" data-module="govuk-tabs">
-    <h2 class="govuk-tabs__title">
-      Contents
-    </h2>
-    <ul class="govuk-tabs__list">
-  
-          <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#Python">
-              Python
-            </a>
-          </li>
-          <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#R">
-              R
-            </a>
-          </li>
-          <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#SQL">
-              SQL
-            </a>
-          </li>
-    </ul>
-        <div class="govuk-tabs__panel" id="Python">
-            <p>spark_df = spark.read.table('samples.nyctaxi.trips')<br>
-              display(spark_df)</p>
-  
-  
-  
-        </div>
-        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="R">
-            <p>library(SparkR)<br>
-              spark_df <- tableToDF("samples.nyctaxi.trips")<br>
-              display(spark_df)</p>
-  
-  
-  
-  
-        </div>
-        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="SQL">
-    
-  <p>SELECT * FROM samples.nyctaxi.trips </p>
-
-  
-        </div>
-  </div>
-  
-  
-    </form>
 
     <li>Run your code.</li>
 </ol>
