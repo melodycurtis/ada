@@ -46,57 +46,130 @@
 <h2 class="govuk-heading-m">Filtering your data</h2>
 <p>Filtering your data first - will improve your performance.</p>
 
-<form action="/form-handler" method="post" novalidate>
-      
+<link rel="stylesheet"
 
-  <div class="govuk-tabs" data-module="govuk-tabs">
-    <h2 class="govuk-tabs__title">
-      Contents
-    </h2>
-    <ul class="govuk-tabs__list">
-  
-          <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#Python">
-              Python
-            </a>
-          </li>
-          <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#R">
-              R
-            </a>
-          </li>
-          <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#SQL">
-              SQL
-            </a>
-          </li>
-    </ul>
-        <div class="govuk-tabs__panel" id="Python">
-            <p>spark_df = spark.read.table('samples.nyctaxi.trips')<br>
-              display(spark_df)</p>
-  
-  
-  
-        </div>
-        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="R">
-            <p>library(SparkR)<br>
-              spark_df <- tableToDF("samples.nyctaxi.trips")<br>
-              display(spark_df)</p>
-  
-  
-  
-  
-        </div>
-        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="SQL">
-    
-  <p>SELECT * FROM samples.nyctaxi.trips </p>
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
 
-  
-        </div>
-  </div>
-  
-  
-    </form>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+
+<script src="~/js/Support/code-highlight.js" asp-append-version="true"></script>
+
+ 
+
+<form action="/form-handler" method="post" novalidate="">
+
+           <div class="govuk-tabs" data-module="govuk-tabs">
+
+              <h2 class="govuk-tabs__title">
+
+                 Contents
+
+              </h2>
+
+              <ul class="govuk-tabs__list" role="tablist">
+
+                 <li class="govuk-tabs__list-item govuk-tabs__list-item--selected" role="presentation">
+
+                    <a class="govuk-tabs__tab" href="#past-day" id="tab_past-day" role="tab" aria-controls="past-day" aria-selected="true" tabindex="0">
+
+                    Python
+
+                    </a>
+
+                 </li>
+
+                 <li class="govuk-tabs__list-item" role="presentation">
+
+                    <a class="govuk-tabs__tab" href="#past-week" id="tab_past-week" role="tab" aria-controls="past-week" aria-selected="false" tabindex="-1">
+
+                    R
+
+                    </a>
+
+                 </li>
+
+                 <li class="govuk-tabs__list-item" role="presentation">
+
+                    <a class="govuk-tabs__tab" href="#past-month" id="tab_past-month" role="tab" aria-controls="past-month" aria-selected="false" tabindex="-1">
+
+                    SQL
+
+                    </a>
+
+                 </li>
+
+              </ul>
+
+              <div class="govuk-tabs__panel" id="past-day" role="tabpanel" aria-labelledby="tab_past-day">
+
+                 
+
+                 <div class="app-example__code" data-module="app-copy">
+
+                    <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
+
+                    <pre>
+
+                        <code tabindex="0" class="python">
+spark_df = spark.read.table('samples.nyctaxi.trips')
+display(spark_df)
+                        </code>
+
+                    </pre>
+
+                 </div>
+
+              </div>
+
+              <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week" role="tabpanel" aria-labelledby="tab_past-week">
+
+                 
+
+                 <div class="app-example__code" data-module="app-copy">
+
+                    <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
+
+                    <pre>
+
+                        <code tabindex="0" class="r">
+library(SparkR)
+spark_df <- tableToDF("samples.nyctaxi.trips")
+display(spark_df)
+                        </code>
+
+                    </pre>
+
+                 </div>
+
+              </div>
+
+              <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month" role="tabpanel" aria-labelledby="tab_past-month">
+
+                 
+
+                 <div class="app-example__code" data-module="app-copy">
+
+                    <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
+
+                    <pre>
+
+                        <code tabindex="0" class="javascript">
+SELECT * FROM samples.nyctaxi.trips
+
+FROM table_name
+
+WHERE condition;
+                        </code>
+
+                    </pre>
+
+                 </div>
+
+              </div>
+
+           </div>
+
+        </form>
 
 <br>
 
@@ -105,57 +178,130 @@
 
 <h2 class="govuk-heading-m">Sorting your data</h2>
 <p>Sorting your data will help you view the records most important to you.</p>
-<form action="/form-handler" method="post" novalidate>
-      
+<link rel="stylesheet"
 
-  <div class="govuk-tabs" data-module="govuk-tabs">
-    <h2 class="govuk-tabs__title">
-      Contents
-    </h2>
-    <ul class="govuk-tabs__list">
-  
-          <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#Python">
-              Python
-            </a>
-          </li>
-          <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#R">
-              R
-            </a>
-          </li>
-          <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#SQL">
-              SQL
-            </a>
-          </li>
-    </ul>
-        <div class="govuk-tabs__panel" id="Python">
-            <p>spark_df = spark.read.table('samples.nyctaxi.trips')<br>
-              display(spark_df)</p>
-  
-  
-  
-        </div>
-        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="R">
-            <p>library(SparkR)<br>
-              spark_df <- tableToDF("samples.nyctaxi.trips")<br>
-              display(spark_df)</p>
-  
-  
-  
-  
-        </div>
-        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="SQL">
-    
-  <p>SELECT * FROM samples.nyctaxi.trips </p>
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
 
-  
-        </div>
-  </div>
-  
-  
-    </form>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+
+<script src="~/js/Support/code-highlight.js" asp-append-version="true"></script>
+
+ 
+
+<form action="/form-handler" method="post" novalidate="">
+
+           <div class="govuk-tabs" data-module="govuk-tabs">
+
+              <h2 class="govuk-tabs__title">
+
+                 Contents
+
+              </h2>
+
+              <ul class="govuk-tabs__list" role="tablist">
+
+                 <li class="govuk-tabs__list-item govuk-tabs__list-item--selected" role="presentation">
+
+                    <a class="govuk-tabs__tab" href="#past-day" id="tab_past-day" role="tab" aria-controls="past-day" aria-selected="true" tabindex="0">
+
+                    Python
+
+                    </a>
+
+                 </li>
+
+                 <li class="govuk-tabs__list-item" role="presentation">
+
+                    <a class="govuk-tabs__tab" href="#past-week" id="tab_past-week" role="tab" aria-controls="past-week" aria-selected="false" tabindex="-1">
+
+                    R
+
+                    </a>
+
+                 </li>
+
+                 <li class="govuk-tabs__list-item" role="presentation">
+
+                    <a class="govuk-tabs__tab" href="#past-month" id="tab_past-month" role="tab" aria-controls="past-month" aria-selected="false" tabindex="-1">
+
+                    SQL
+
+                    </a>
+
+                 </li>
+
+              </ul>
+
+              <div class="govuk-tabs__panel" id="past-day" role="tabpanel" aria-labelledby="tab_past-day">
+
+                 
+
+                 <div class="app-example__code" data-module="app-copy">
+
+                    <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
+
+                    <pre>
+
+                        <code tabindex="0" class="python">
+spark_df = spark.read.table('samples.nyctaxi.trips')
+display(spark_df)
+                        </code>
+
+                    </pre>
+
+                 </div>
+
+              </div>
+
+              <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week" role="tabpanel" aria-labelledby="tab_past-week">
+
+                 
+
+                 <div class="app-example__code" data-module="app-copy">
+
+                    <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
+
+                    <pre>
+
+                        <code tabindex="0" class="r">
+library(SparkR)
+spark_df <- tableToDF("samples.nyctaxi.trips")
+display(spark_df)
+                        </code>
+
+                    </pre>
+
+                 </div>
+
+              </div>
+
+              <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month" role="tabpanel" aria-labelledby="tab_past-month">
+
+                 
+
+                 <div class="app-example__code" data-module="app-copy">
+
+                    <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
+
+                    <pre>
+
+                        <code tabindex="0" class="javascript">
+SELECT * FROM samples.nyctaxi.trips
+
+FROM table_name
+
+WHERE condition;
+                        </code>
+
+                    </pre>
+
+                 </div>
+
+              </div>
+
+           </div>
+
+        </form>
 
 <br>
 
@@ -164,57 +310,130 @@
 
 <h2 class="govuk-heading-m">Aggregating your data</h2>
 <p>Aggregating your data will help to get a broader perspective.</p>
-<form action="/form-handler" method="post" novalidate>
-      
+<link rel="stylesheet"
 
-  <div class="govuk-tabs" data-module="govuk-tabs">
-    <h2 class="govuk-tabs__title">
-      Contents
-    </h2>
-    <ul class="govuk-tabs__list">
-  
-          <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#Python">
-              Python
-            </a>
-          </li>
-          <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#R">
-              R
-            </a>
-          </li>
-          <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#SQL">
-              SQL
-            </a>
-          </li>
-    </ul>
-        <div class="govuk-tabs__panel" id="Python">
-            <p>spark_df = spark.read.table('samples.nyctaxi.trips')<br>
-              display(spark_df)</p>
-  
-  
-  
-        </div>
-        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="R">
-            <p>library(SparkR)<br>
-              spark_df <- tableToDF("samples.nyctaxi.trips")<br>
-              display(spark_df)</p>
-  
-  
-  
-  
-        </div>
-        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="SQL">
-    
-  <p>SELECT * FROM samples.nyctaxi.trips </p>
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
 
-  
-        </div>
-  </div>
-  
-  
-    </form>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+
+<script src="~/js/Support/code-highlight.js" asp-append-version="true"></script>
+
+ 
+
+<form action="/form-handler" method="post" novalidate="">
+
+           <div class="govuk-tabs" data-module="govuk-tabs">
+
+              <h2 class="govuk-tabs__title">
+
+                 Contents
+
+              </h2>
+
+              <ul class="govuk-tabs__list" role="tablist">
+
+                 <li class="govuk-tabs__list-item govuk-tabs__list-item--selected" role="presentation">
+
+                    <a class="govuk-tabs__tab" href="#past-day" id="tab_past-day" role="tab" aria-controls="past-day" aria-selected="true" tabindex="0">
+
+                    Python
+
+                    </a>
+
+                 </li>
+
+                 <li class="govuk-tabs__list-item" role="presentation">
+
+                    <a class="govuk-tabs__tab" href="#past-week" id="tab_past-week" role="tab" aria-controls="past-week" aria-selected="false" tabindex="-1">
+
+                    R
+
+                    </a>
+
+                 </li>
+
+                 <li class="govuk-tabs__list-item" role="presentation">
+
+                    <a class="govuk-tabs__tab" href="#past-month" id="tab_past-month" role="tab" aria-controls="past-month" aria-selected="false" tabindex="-1">
+
+                    SQL
+
+                    </a>
+
+                 </li>
+
+              </ul>
+
+              <div class="govuk-tabs__panel" id="past-day" role="tabpanel" aria-labelledby="tab_past-day">
+
+                 
+
+                 <div class="app-example__code" data-module="app-copy">
+
+                    <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
+
+                    <pre>
+
+                        <code tabindex="0" class="python">
+spark_df = spark.read.table('samples.nyctaxi.trips')
+display(spark_df)
+                        </code>
+
+                    </pre>
+
+                 </div>
+
+              </div>
+
+              <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week" role="tabpanel" aria-labelledby="tab_past-week">
+
+                 
+
+                 <div class="app-example__code" data-module="app-copy">
+
+                    <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
+
+                    <pre>
+
+                        <code tabindex="0" class="r">
+library(SparkR)
+spark_df <- tableToDF("samples.nyctaxi.trips")
+display(spark_df)
+                        </code>
+
+                    </pre>
+
+                 </div>
+
+              </div>
+
+              <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month" role="tabpanel" aria-labelledby="tab_past-month">
+
+                 
+
+                 <div class="app-example__code" data-module="app-copy">
+
+                    <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
+
+                    <pre>
+
+                        <code tabindex="0" class="javascript">
+SELECT * FROM samples.nyctaxi.trips
+
+FROM table_name
+
+WHERE condition;
+                        </code>
+
+                    </pre>
+
+                 </div>
+
+              </div>
+
+           </div>
+
+        </form>
 
 <br>
 
@@ -223,57 +442,130 @@
 
 <h2 class="govuk-heading-m">Joining your data</h2>
 <p>You will be able to join multiple datasets together.</p>
-<form action="/form-handler" method="post" novalidate>
-      
+<link rel="stylesheet"
 
-  <div class="govuk-tabs" data-module="govuk-tabs">
-    <h2 class="govuk-tabs__title">
-      Contents
-    </h2>
-    <ul class="govuk-tabs__list">
-  
-          <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#Python">
-              Python
-            </a>
-          </li>
-          <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#R">
-              R
-            </a>
-          </li>
-          <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#SQL">
-              SQL
-            </a>
-          </li>
-    </ul>
-        <div class="govuk-tabs__panel" id="Python">
-            <p>spark_df = spark.read.table('samples.nyctaxi.trips')<br>
-              display(spark_df)</p>
-  
-  
-  
-        </div>
-        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="R">
-            <p>library(SparkR)<br>
-              spark_df <- tableToDF("samples.nyctaxi.trips")<br>
-              display(spark_df)</p>
-  
-  
-  
-  
-        </div>
-        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="SQL">
-    
-  <p>SELECT * FROM samples.nyctaxi.trips </p>
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
 
-  
-        </div>
-  </div>
-  
-  
-    </form>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+
+<script src="~/js/Support/code-highlight.js" asp-append-version="true"></script>
+
+ 
+
+<form action="/form-handler" method="post" novalidate="">
+
+           <div class="govuk-tabs" data-module="govuk-tabs">
+
+              <h2 class="govuk-tabs__title">
+
+                 Contents
+
+              </h2>
+
+              <ul class="govuk-tabs__list" role="tablist">
+
+                 <li class="govuk-tabs__list-item govuk-tabs__list-item--selected" role="presentation">
+
+                    <a class="govuk-tabs__tab" href="#past-day" id="tab_past-day" role="tab" aria-controls="past-day" aria-selected="true" tabindex="0">
+
+                    Python
+
+                    </a>
+
+                 </li>
+
+                 <li class="govuk-tabs__list-item" role="presentation">
+
+                    <a class="govuk-tabs__tab" href="#past-week" id="tab_past-week" role="tab" aria-controls="past-week" aria-selected="false" tabindex="-1">
+
+                    R
+
+                    </a>
+
+                 </li>
+
+                 <li class="govuk-tabs__list-item" role="presentation">
+
+                    <a class="govuk-tabs__tab" href="#past-month" id="tab_past-month" role="tab" aria-controls="past-month" aria-selected="false" tabindex="-1">
+
+                    SQL
+
+                    </a>
+
+                 </li>
+
+              </ul>
+
+              <div class="govuk-tabs__panel" id="past-day" role="tabpanel" aria-labelledby="tab_past-day">
+
+                 
+
+                 <div class="app-example__code" data-module="app-copy">
+
+                    <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
+
+                    <pre>
+
+                        <code tabindex="0" class="python">
+spark_df = spark.read.table('samples.nyctaxi.trips')
+display(spark_df)
+                        </code>
+
+                    </pre>
+
+                 </div>
+
+              </div>
+
+              <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week" role="tabpanel" aria-labelledby="tab_past-week">
+
+                 
+
+                 <div class="app-example__code" data-module="app-copy">
+
+                    <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
+
+                    <pre>
+
+                        <code tabindex="0" class="r">
+library(SparkR)
+spark_df <- tableToDF("samples.nyctaxi.trips")
+display(spark_df)
+                        </code>
+
+                    </pre>
+
+                 </div>
+
+              </div>
+
+              <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month" role="tabpanel" aria-labelledby="tab_past-month">
+
+                 
+
+                 <div class="app-example__code" data-module="app-copy">
+
+                    <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
+
+                    <pre>
+
+                        <code tabindex="0" class="javascript">
+SELECT * FROM samples.nyctaxi.trips
+
+FROM table_name
+
+WHERE condition;
+                        </code>
+
+                    </pre>
+
+                 </div>
+
+              </div>
+
+           </div>
+
+        </form>
 
 <br>
 
