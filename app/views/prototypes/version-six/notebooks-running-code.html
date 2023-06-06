@@ -67,63 +67,117 @@
 <p><img src="/public/images/new-note3.png" class="app-walkthrough-image"></p><br>
 
 
-<form action="/form-handler" method="post" novalidate>
-      
+<link rel="stylesheet"
 
-  <div class="govuk-tabs" data-module="govuk-tabs">
-    <h2 class="govuk-tabs__title">
-      Contents
-    </h2>
-    <ul class="govuk-tabs__list">
-  
-          <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#Python">
-              Python
-            </a>
-          </li>
-          <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#R">
-              R
-            </a>
-          </li>
-          <li class="govuk-tabs__list-item">
-            <a class="govuk-tabs__tab" href="#SQL">
-              SQL
-            </a>
-          </li>
-    </ul>
-        <div class="govuk-tabs__panel" id="Python">
-            <h2 class="govuk-heading-l">print("Hello World")</h2>
-  
-  
-  
-        </div>
-        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="R">
-            <h2 class="govuk-heading-l">print("Hello World")</h2>
-  
-  
-  
-  
-        </div>
-        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="SQL">
-            <h2 class="govuk-heading-l"></h2>
-            
-  
-  
-  
-      <h2>
-  SELECT "Hello World"
-   </h2>
-  
-  
-  
-  
-  
-        </div>
-  </div>
-  
-  
-    </form>
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+
+<script src="~/js/Support/code-highlight.js" asp-append-version="true"></script>
+
+ 
+
+<form action="/form-handler" method="post" novalidate="">
+
+           <div class="govuk-tabs" data-module="govuk-tabs">
+
+              <h2 class="govuk-tabs__title">
+
+                 Contents
+
+              </h2>
+
+              <ul class="govuk-tabs__list" role="tablist">
+
+                 <li class="govuk-tabs__list-item govuk-tabs__list-item--selected" role="presentation">
+
+                    <a class="govuk-tabs__tab" href="#past-day" id="tab_past-day" role="tab" aria-controls="past-day" aria-selected="true" tabindex="0">
+
+                    Python
+
+                    </a>
+
+                 </li>
+
+                 <li class="govuk-tabs__list-item" role="presentation">
+
+                    <a class="govuk-tabs__tab" href="#past-week" id="tab_past-week" role="tab" aria-controls="past-week" aria-selected="false" tabindex="-1">
+
+                    R
+
+                    </a>
+
+                 </li>
+
+                 <li class="govuk-tabs__list-item" role="presentation">
+
+                    <a class="govuk-tabs__tab" href="#past-month" id="tab_past-month" role="tab" aria-controls="past-month" aria-selected="false" tabindex="-1">
+
+                    SQL
+
+                    </a>
+
+                 </li>
+
+              </ul>
+
+              <div class="govuk-tabs__panel" id="past-day" role="tabpanel" aria-labelledby="tab_past-day">
+
+                 
+
+                 <div class="app-example__code" data-module="app-copy">
+
+                    <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
+
+                    <pre>
+
+                        <code tabindex="0" class="python">print("Hello World")</code>
+
+                    </pre>
+
+                 </div>
+
+              </div>
+
+              <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week" role="tabpanel" aria-labelledby="tab_past-week">
+
+                 
+
+                 <div class="app-example__code" data-module="app-copy">
+
+                    <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
+
+                    <pre>
+
+                        <code tabindex="0" class="r">print("Hello World")</code>
+
+                    </pre>
+
+                 </div>
+
+              </div>
+
+              <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month" role="tabpanel" aria-labelledby="tab_past-month">
+
+                 
+
+                 <div class="app-example__code" data-module="app-copy">
+
+                    <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
+
+                    <pre>
+
+                        <code tabindex="0" class="javascript">SELECT "Hello World"</code>
+
+                    </pre>
+
+                 </div>
+
+              </div>
+
+           </div>
+
+        </form>
 
 
 
