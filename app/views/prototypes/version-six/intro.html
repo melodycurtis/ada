@@ -29,6 +29,8 @@
         <span class="govuk-caption-l">What you need to know</span><br>
         <h1 class="govuk-heading-xl">Start using Databricks</h1>
 
+        <span class="govuk-caption-l">Databricks combines Data Science, Machine Learning, and Data Warehousing workloads in a single platform and adds security and governance with Unity Catalog.</span><br>
+
 
         <table class="govuk-table">
           <thead class="govuk-table__head">
@@ -85,16 +87,22 @@
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">
                 <h3 class="govuk-heading-s govuk-!-font-size-27">Unity catalog</h3>
-                <p>A place to administer data access policies that apply across all workspaces.</p>
+                <p>A place to administer data access that apply across all workspaces.</p>
                 <p>In Unity Catalog, the hierarchy of primary data objects flows from metastore to table:</p>
+                <p><img src="/public/images/unity-catalog.png" class="app-walkthrough-image"></p><br>
                 
-                <p><STRONG>Metastore</STRONG>: The top-level container for metadata. Each metastore exposes a three-level namespace (catalog.schema.table) that organizes your data.<br>
-                  <STRONG>Catalog:</STRONG> The first layer of the object hierarchy, used to organize your data assets.<br>
-                  <STRONG>Schema:</STRONG> Also known as databases, schemas are the second layer of the object hierarchy and contain tables and views.<br>
+                <p><STRONG>Metastore</STRONG>: The top-level container for metadata. Each metastore uses a three-level name (catalog.schema.table) that organizes your data.<br><br>
+                  <STRONG>Catalog:</STRONG> The first layer of the object hierarchy, used to organize your data assets.<br><br>
+                  <STRONG>Schema:</STRONG> Also known as databases, schemas are the second layer of the object hierarchy and contain tables and views.<br><br>
                   <STRONG>Table:</STRONG> At the lowest level in the object hierarchy are tables and views.</p>
+                  
+                  
               </td>
               
             </tr> 
+
+            
+  
 
           
                                                       
