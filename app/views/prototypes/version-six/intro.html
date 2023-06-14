@@ -26,11 +26,9 @@
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds-from-desktop">
       
-
+        <span class="govuk-caption-l">What you need to know</span><br>
         <h1 class="govuk-heading-xl">Start using Databricks</h1>
 
-
-  
 
         <table class="govuk-table">
           <thead class="govuk-table__head">
@@ -42,16 +40,15 @@
           </tr>
             
           
-          
-          
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">
-                <h3 class="govuk-heading-s govuk-!-margin-bottom-2"> Environment</h3>
+                <h3 class="govuk-heading-s govuk-!-font-size-27">Environment</h3>
                 <p>There are three environments for developing data-intensive applications: 
                   <ol class="govuk-list govuk-list--number">
-                    <li>SQL.</li>
-                    <li>Data Science and Engineering.</li>
+                    <li>Data Science & Engineering.</li>
                     <li>Machine Learning.</li>
+                    <li>SQL.</li>
+                    
                   </ol>
                   
               </td>
@@ -60,8 +57,8 @@
 
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">
-                <h3 class="govuk-heading-s govuk-!-margin-bottom-2"> Notebook
-                  </h3>
+                <h3 class="govuk-heading-s govuk-!-font-size-27">Notebook</h3>
+                
                 <p>Notebooks are used for creating data science and machine learning workflows and collaborating with colleagues. They provide real-time coauthoring in multiple languages, automatic versioning, and built-in data visualizations.
                    </p>  
               </td>
@@ -70,16 +67,31 @@
 
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">
-                <h3 class="govuk-heading-s govuk-!-margin-bottom-2"> Workspace</h3>
-                <p>An environment for accessing your assets. It organises objects - notebooks, libraries, dashboards, and experiments into folders and provides access to data objects and computational resources.</p>  
+                <h3 class="govuk-heading-s govuk-!-font-size-27">Workspace</h3>
+                <p>An space for accessing your assets. It organises objects - notebooks, libraries, dashboards, and experiments into folders and provides access to data objects and computational resources.</p>  
               </td>
               
             </tr> 
 
             <tr class="govuk-table__row">
               <td class="govuk-table__cell">
-                <h3 class="govuk-heading-s govuk-!-margin-bottom-2">Cluster</h3>
+                <h3 class="govuk-heading-s govuk-!-font-size-27">Cluster</h3>
                 <p>A set of computation resources and configurations where you can run notebooks and jobs. There are two types of clusters: all-purpose and job.</p>  
+              </td>
+              
+            </tr> 
+
+
+            <tr class="govuk-table__row">
+              <td class="govuk-table__cell">
+                <h3 class="govuk-heading-s govuk-!-font-size-27">Unity catalog</h3>
+                <p>A place to administer data access policies that apply across all workspaces.</p>
+                <p>In Unity Catalog, the hierarchy of primary data objects flows from metastore to table:</p>
+                
+                <p><STRONG>Metastore</STRONG>: The top-level container for metadata. Each metastore exposes a three-level namespace (catalog.schema.table) that organizes your data.<br>
+                  <STRONG>Catalog:</STRONG> The first layer of the object hierarchy, used to organize your data assets.<br>
+                  <STRONG>Schema:</STRONG> Also known as databases, schemas are the second layer of the object hierarchy and contain tables and views.<br>
+                  <STRONG>Table:</STRONG> At the lowest level in the object hierarchy are tables and views.</p>
               </td>
               
             </tr> 
