@@ -69,14 +69,36 @@
 
  <p>Click on the start icon in the <STRONG>Status</STRONG> column - next to the warehouse.</p>
 
+
+
+
+
+  
+    
+    <p>Type <STRONG>SELECT</STRONG> in the box and start typing. The browser will suggest databases and tables that are available to you.</p>
+    <br>
+    
+  <p>By default, warehouses are sorted by state - running warehouses first - then in alphabetical order.</p>
+
+ 
+  
+  
+<p>You can construct a query by inserting elements from the schema browser or typing in the SQL editor.</p>
+
+
+  <ul class="govuk-list govuk-list--bullet">
+    <li>To insert an object from the schema browser into the SQL editor, click the double arrow on the right of a data object.</li>
+    <li>Type <STRONG>wer</STRONG> query in the SQL editor.  </li>
+    
+  </ul>
+ <p>SQL editor supports autocomplete. As you type, it suggests completions. For example, if a valid completion at the cursor location is a column, it wil suggest a column name. If you type select * from table as t where t., autocomplete recognizes that t is an alias for table and suggests the columns inside table.</p> 
+<p><img src="/public/images/sql-query1.png" class="app-walkthrough-image"></p>
 <br><br>
-<p>If a SQL warehouse is stopped and you attempt to run a job or query that uses it - Databricks starts the warehouse automatically.<br><br>
-  A warehouse also restarts automatically if you open a query in the SQL editor that is saved to a stopped warehouse or if you open a dashboard that is saved with a dashboard-level warehouse assigned to it.<br><br>
-   Auto-restart works for all types of SQL warehouses, including serverless SQL warehouses, which start very quickly.</p>
 
-   <br><br>
+  
+  
 
-
+<br><br>
 <a href="walk-sql-edit" class="govuk-button show-continue" style="display: inline;">
       Next - edit multiple queries
     </a>
