@@ -43,7 +43,7 @@
 <br>
 
 
-<h2 class="govuk-heading-m">Filtering your data</h2>
+<h2 class="govuk-heading-m">Filter your data</h2>
 <p>Filtering your data first - will improve your performance.</p>
 
 <link rel="stylesheet"
@@ -110,10 +110,18 @@
 
                     <pre>
 
-                        <code tabindex="0" class="python">
-spark_df = spark.read.table('samples.nyctaxi.trips')
+                        <code tabindex="0" class="python">spark_df = spark.read.table('samples.nyctaxi.trips')
 display(spark_df)
-                        </code>
+
+#Filter trips start in zip 10001
+filter_df = spark_df[spark_df['pickup_zip']=='10001']
+                           
+#Filter trips less than 5 miles
+filter_df = spark_df[spark_df['trip_distance']<5]
+
+#Filter fares between 20 and 30 dollars
+filter_df = spark_df[(spark_df['fare_amount']>20.0) & (spark_df['fare_amount']<=30.0)]
+display(filter_df)</code>
 
                     </pre>
 
@@ -176,7 +184,7 @@ WHERE condition;
 <br>
 
 
-<h2 class="govuk-heading-m">Sorting your data</h2>
+<h2 class="govuk-heading-m">Sort your data</h2>
 <p>Sorting your data will help you view the records most important to you.</p>
 <link rel="stylesheet"
 
@@ -308,7 +316,7 @@ WHERE condition;
 <br>
 
 
-<h2 class="govuk-heading-m">Aggregating your data</h2>
+<h2 class="govuk-heading-m">Aggregat your data</h2>
 <p>Aggregating your data will help to get a broader perspective.</p>
 <link rel="stylesheet"
 
@@ -440,7 +448,7 @@ WHERE condition;
 <br>
 
 
-<h2 class="govuk-heading-m">Joining your data</h2>
+<h2 class="govuk-heading-m">Join your data</h2>
 <p>You will be able to join multiple datasets together.</p>
 <link rel="stylesheet"
 
