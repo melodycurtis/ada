@@ -388,9 +388,12 @@ WHERE condition;
                     <pre>
 
                         <code tabindex="0" class="python">
-spark_df = spark.read.table('samples.nyctaxi.trips')
-display(spark_df)
-                        </code>
+#Get mean of all fields per Pickup Zip
+agg_df = spark_df.groupby('pickup_zip').mean()
+
+#Get count of all fields per Pickup Zip to Drop off zone
+agg_df = spark_df.groupby(['pickup_zip', 'dropoff_zip']).count()
+display(agg_df)</code>
 
                     </pre>
 
