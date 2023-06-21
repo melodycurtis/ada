@@ -522,10 +522,15 @@ WHERE condition;
 
                     <pre>
 
-                        <code tabindex="0" class="python">
-spark_df = spark.read.table('samples.nyctaxi.trips')
-display(spark_df)
-                        </code>
+                        <code tabindex="0" class="python">#Append two data sets together (Combining the filtered dataframes of Zip=10065 and 10009)
+part_1_df = spark_df[spark_df['pickup_zip']=='10065']
+part_2_df = spark_df[spark_df['pickup_zip']=='10009']
+merge_df = part_1_df.union(part_2_df)
+
+#Join two datasets (Joining the maximum fare found with the full listing of fares)
+max_df = spark_df.groupby('pickup_zip').max().select(['pickup_zip', 'max(fare_amount)'])
+join_df = spark_df.join(max_df, on='pickup_zip', how='inner')
+display(join_df)</code>
 
                     </pre>
 
