@@ -250,10 +250,15 @@ WHERE condition;
 
                     <pre>
 
-                        <code tabindex="0" class="python">
-spark_df = spark.read.table('samples.nyctaxi.trips')
-display(spark_df)
-                        </code>
+                        <code tabindex="0" class="python">#Sort trips by distance (Lowest First)
+sort_df = spark_df.sort('trip_distance')
+
+#Sort trips by fare (Highest First)
+sort_df = spark_df.sort('fare_amount', ascending=False)
+
+#Sort trips by Pickup Zip (Highest first) then Date (Earliest first)
+sort_df = spark_df.sort(['pickup_zip', 'tpep_pickup_datetime'], ascending=[False, True])
+display(sort_df)</code>
 
                     </pre>
 
@@ -316,7 +321,7 @@ WHERE condition;
 <br>
 
 
-<h2 class="govuk-heading-m">Aggregat your data</h2>
+<h2 class="govuk-heading-m">Aggregate your data</h2>
 <p>Aggregating your data will help to get a broader perspective.</p>
 <link rel="stylesheet"
 
