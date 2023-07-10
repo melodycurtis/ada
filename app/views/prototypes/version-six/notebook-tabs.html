@@ -54,21 +54,6 @@
 
 <script src="~/js/Support/code-highlight.js" asp-append-version="true"></script>
 
- 
-
-
-
-
-
-  
-
-
-  
-
-
-   
-
-
 
 
 <div class="govuk-tabs" data-module="govuk-tabs">
@@ -97,12 +82,12 @@
     <h2 class="govuk-heading-m">Python</h2>
     <div class="app-example__code" data-module="app-copy">
       
-      
+     <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="filter-python"></div> 
   <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
 
 <pre>
 
-  <code tabindex="0" class="javascript">spark_df = spark.read.table('samples.nyctaxi.trips')
+  <code tabindex="0" class="">spark_df = spark.read.table('samples.nyctaxi.trips')
     display(spark_df)
     
     #Filter trips start in zip 10001
