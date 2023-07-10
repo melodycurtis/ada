@@ -58,15 +58,19 @@
 
 <form action="/form-handler" method="post" novalidate="">
 
-         <div class="govuk-tabs" data-module="govuk-tabs">
+           <div class="govuk-tabs" data-module="govuk-tabs">
 
-         <h2 class="govuk-tabs__title">Contents</h2>
+              <h2 class="govuk-tabs__title">
 
-            <ul class="govuk-tabs__list" role="tablist">
+                 Contents
+
+              </h2>
+
+              <ul class="govuk-tabs__list" role="tablist">
 
                  <li class="govuk-tabs__list-item govuk-tabs__list-item--selected" role="presentation">
 
-                    <a class="govuk-tabs__tab" href="#filter-python" id="filter-python" role="tab" aria-controls="past-day" aria-selected="true" tabindex="0">
+                    <a class="govuk-tabs__tab" href="#past-day" id="tab_past-day" role="tab" aria-controls="past-day" aria-selected="true" tabindex="0">
 
                     Python
 
@@ -76,7 +80,7 @@
 
                  <li class="govuk-tabs__list-item" role="presentation">
 
-                    <a class="govuk-tabs__tab" href="#filter-r" id="filter-r" role="tab" aria-controls="past-week" aria-selected="false" tabindex="-1">
+                    <a class="govuk-tabs__tab" href="#past-week" id="tab_past-week" role="tab" aria-controls="past-week" aria-selected="false" tabindex="-1">
 
                     R
 
@@ -86,7 +90,7 @@
 
                  <li class="govuk-tabs__list-item" role="presentation">
 
-                    <a class="govuk-tabs__tab" href="#filter-sql" id="filter-r" role="tab" aria-controls="past-month" aria-selected="false" tabindex="-1">
+                    <a class="govuk-tabs__tab" href="#past-month" id="tab_past-month" role="tab" aria-controls="past-month" aria-selected="false" tabindex="-1">
 
                     SQL
 
@@ -94,30 +98,30 @@
 
                  </li>
 
-            </ul>
+              </ul>
 
-              
-            <div class="govuk-tabs__panel" id="sort-python" role="tabpanel" aria-labelledby="tab_past-day">
+              <div class="govuk-tabs__panel" id="past-day" role="tabpanel" aria-labelledby="tab_past-day">
 
-               <div class="app-example__code" data-module="app-copy">
+                 
 
-                  <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
+                 <div class="app-example__code" data-module="app-copy">
 
-                  <pre>
+                    <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
 
-                  <code tabindex="0" class="python">
-   spark_df = spark.read.table('samples.nyctaxi.trips')
-   display(spark_df)
+                    <pre>
 
-   #Filter trips start in zip 10001
-   filter_df = spark_df[spark_df['pickup_zip']=='10001']
+                        <code tabindex="0" class="python">spark_df = spark.read.table('samples.nyctaxi.trips')
+display(spark_df)
+
+#Filter trips start in zip 10001
+filter_df = spark_df[spark_df['pickup_zip']=='10001']
                            
-   #Filter trips less than 5 miles
-   filter_df = spark_df[spark_df['trip_distance']<5]
+#Filter trips less than 5 miles
+filter_df = spark_df[spark_df['trip_distance']<5]
 
-   #Filter fares between 20 and 30 dollars
-   filter_df = spark_df[(spark_df['fare_amount']>20.0) & (spark_df['fare_amount']<=30.0)]
-   display(filter_df)</code>
+#Filter fares between 20 and 30 dollars
+filter_df = spark_df[(spark_df['fare_amount']>20.0) & (spark_df['fare_amount']<=30.0)]
+display(filter_df)</code>
 
                     </pre>
 
@@ -125,7 +129,7 @@
 
               </div>
 
-              <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="filter-r" role="tabpanel" aria-labelledby="tab_past-week">
+              <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week" role="tabpanel" aria-labelledby="tab_past-week">
 
                  
 
@@ -147,7 +151,7 @@ display(spark_df)
 
               </div>
 
-              <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="filter-sql" role="tabpanel" aria-labelledby="tab_past-month">
+              <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month" role="tabpanel" aria-labelledby="tab_past-month">
 
                  
 
@@ -206,7 +210,7 @@ WHERE condition;
 
                  <li class="govuk-tabs__list-item govuk-tabs__list-item--selected" role="presentation">
 
-                    <a class="govuk-tabs__tab" href="#sort-python" id="tab_sort" role="tab" aria-controls="past-day" aria-selected="true" tabindex="0">
+                    <a class="govuk-tabs__tab" href="#past-day" id="tab_past-day" role="tab" aria-controls="past-day" aria-selected="true" tabindex="0">
 
                     Python
 
@@ -216,7 +220,7 @@ WHERE condition;
 
                  <li class="govuk-tabs__list-item" role="presentation">
 
-                    <a class="govuk-tabs__tab" href="#sort-r" id="tab_past-week" role="tab" aria-controls="past-week" aria-selected="false" tabindex="-1">
+                    <a class="govuk-tabs__tab" href="#past-week" id="tab_past-week" role="tab" aria-controls="past-week" aria-selected="false" tabindex="-1">
 
                     R
 
@@ -226,7 +230,7 @@ WHERE condition;
 
                  <li class="govuk-tabs__list-item" role="presentation">
 
-                    <a class="govuk-tabs__tab" href="#sort-sql" id="tab_past-month" role="tab" aria-controls="past-month" aria-selected="false" tabindex="-1">
+                    <a class="govuk-tabs__tab" href="#past-month" id="tab_past-month" role="tab" aria-controls="past-month" aria-selected="false" tabindex="-1">
 
                     SQL
 
@@ -236,7 +240,7 @@ WHERE condition;
 
               </ul>
 
-              <div class="govuk-tabs__panel" id="sort" role="tabpanel" aria-labelledby="tab_past-day">
+              <div class="govuk-tabs__panel" id="past-day" role="tabpanel" aria-labelledby="tab_past-day">
 
                  
 
@@ -478,7 +482,7 @@ WHERE condition;
 
                  <li class="govuk-tabs__list-item govuk-tabs__list-item--selected" role="presentation">
 
-                    <a class="govuk-tabs__tab" href="#join-python" id="tab_join-python" role="tab" aria-controls="past-day" aria-selected="true" tabindex="0">
+                    <a class="govuk-tabs__tab" href="#past-day" id="tab_past-day" role="tab" aria-controls="past-day" aria-selected="true" tabindex="0">
 
                     Python
 
@@ -488,7 +492,7 @@ WHERE condition;
 
                  <li class="govuk-tabs__list-item" role="presentation">
 
-                    <a class="govuk-tabs__tab" href="#join-r" id="tab_join-r" role="tab" aria-controls="past-week" aria-selected="false" tabindex="-1">
+                    <a class="govuk-tabs__tab" href="#past-week" id="tab_past-week" role="tab" aria-controls="past-week" aria-selected="false" tabindex="-1">
 
                     R
 
@@ -498,7 +502,7 @@ WHERE condition;
 
                  <li class="govuk-tabs__list-item" role="presentation">
 
-                    <a class="govuk-tabs__tab" href="#join-sql" id="join-sql" role="tab" aria-controls="past-month" aria-selected="false" tabindex="-1">
+                    <a class="govuk-tabs__tab" href="#past-month" id="tab_past-month" role="tab" aria-controls="past-month" aria-selected="false" tabindex="-1">
 
                     SQL
 
@@ -508,7 +512,7 @@ WHERE condition;
 
               </ul>
 
-              <div class="govuk-tabs__panel" id="join-sql" role="tabpanel" aria-labelledby="tab_past-day">
+              <div class="govuk-tabs__panel" id="past-day" role="tabpanel" aria-labelledby="tab_past-day">
 
                  
 

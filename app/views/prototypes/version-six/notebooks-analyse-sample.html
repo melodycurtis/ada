@@ -58,15 +58,19 @@
 
 <form action="/form-handler" method="post" novalidate="">
 
-         <div class="govuk-tabs" data-module="govuk-tabs">
+           <div class="govuk-tabs" data-module="govuk-tabs">
 
-         <h2 class="govuk-tabs__title">Contents</h2>
+              <h2 class="govuk-tabs__title">
 
-            <ul class="govuk-tabs__list" role="tablist">
+                 Contents
+
+              </h2>
+
+              <ul class="govuk-tabs__list" role="tablist">
 
                  <li class="govuk-tabs__list-item govuk-tabs__list-item--selected" role="presentation">
 
-                    <a class="govuk-tabs__tab" href="#filter-python" id="filter-python" role="tab" aria-controls="past-day" aria-selected="true" tabindex="0">
+                    <a class="govuk-tabs__tab" href="#filter-python1" id="tab_past-day" role="tab" aria-controls="filter-python1" aria-selected="true" tabindex="0">
 
                     Python
 
@@ -76,7 +80,7 @@
 
                  <li class="govuk-tabs__list-item" role="presentation">
 
-                    <a class="govuk-tabs__tab" href="#filter-r" id="filter-r" role="tab" aria-controls="past-week" aria-selected="false" tabindex="-1">
+                    <a class="govuk-tabs__tab" href="#filter-r1" id="tab_past-week" role="tab" aria-controls="filter-r1" aria-selected="false" tabindex="-1">
 
                     R
 
@@ -86,7 +90,7 @@
 
                  <li class="govuk-tabs__list-item" role="presentation">
 
-                    <a class="govuk-tabs__tab" href="#filter-sql" id="filter-r" role="tab" aria-controls="past-month" aria-selected="false" tabindex="-1">
+                    <a class="govuk-tabs__tab" href="#filter-sql1" id="tab_past-month" role="tab" aria-controls="filter-sql1" aria-selected="false" tabindex="-1">
 
                     SQL
 
@@ -94,19 +98,19 @@
 
                  </li>
 
-            </ul>
+              </ul>
 
-              
-            <div class="govuk-tabs__panel" id="sort-python" role="tabpanel" aria-labelledby="tab_past-day">
+              <div class="govuk-tabs__panel" id="filter-python1" role="tabpanel" aria-labelledby="filter-python1">
 
-               <div class="app-example__code" data-module="app-copy">
+                 
 
-                  <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
+                 <div class="app-example__code" data-module="app-copy">
 
-                  <pre>
+                    <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
 
-                  <code tabindex="0" class="python">
-   spark_df = spark.read.table('samples.nyctaxi.trips')
+                    <pre>
+
+                        <code tabindex="0" class="python">spark_df = spark.read.table('samples.nyctaxi.trips')
    display(spark_df)
 
    #Filter trips start in zip 10001
@@ -125,143 +129,6 @@
 
               </div>
 
-              <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="filter-r" role="tabpanel" aria-labelledby="tab_past-week">
-
-                 
-
-                 <div class="app-example__code" data-module="app-copy">
-
-                    <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
-
-                    <pre>
-
-                        <code tabindex="0" class="r">
-library(SparkR)
-spark_df <- tableToDF("samples.nyctaxi.trips")
-display(spark_df)
-                        </code>
-
-                    </pre>
-
-                 </div>
-
-              </div>
-
-              <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="filter-sql" role="tabpanel" aria-labelledby="tab_past-month">
-
-                 
-
-                 <div class="app-example__code" data-module="app-copy">
-
-                    <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
-
-                    <pre>
-
-                        <code tabindex="0" class="javascript">
-SELECT * FROM samples.nyctaxi.trips
-
-FROM table_name
-
-WHERE condition;
-                        </code>
-
-                    </pre>
-
-                 </div>
-
-              </div>
-
-           </div>
-
-        </form>
-
-<br>
-
-<br>
-
-
-<h2 class="govuk-heading-m">Sort your data</h2>
-<p>Sorting your data will help you view the records most important to you.</p>
-<link rel="stylesheet"
-
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
-
-<script src="~/js/Support/code-highlight.js" asp-append-version="true"></script>
-
- 
-
-<form action="/form-handler" method="post" novalidate="">
-
-           <div class="govuk-tabs" data-module="govuk-tabs">
-
-              <h2 class="govuk-tabs__title">
-
-                 Contents
-
-              </h2>
-
-              <ul class="govuk-tabs__list" role="tablist">
-
-                 <li class="govuk-tabs__list-item govuk-tabs__list-item--selected" role="presentation">
-
-                    <a class="govuk-tabs__tab" href="#sort-python" id="tab_sort" role="tab" aria-controls="past-day" aria-selected="true" tabindex="0">
-
-                    Python
-
-                    </a>
-
-                 </li>
-
-                 <li class="govuk-tabs__list-item" role="presentation">
-
-                    <a class="govuk-tabs__tab" href="#sort-r" id="tab_past-week" role="tab" aria-controls="past-week" aria-selected="false" tabindex="-1">
-
-                    R
-
-                    </a>
-
-                 </li>
-
-                 <li class="govuk-tabs__list-item" role="presentation">
-
-                    <a class="govuk-tabs__tab" href="#sort-sql" id="tab_past-month" role="tab" aria-controls="past-month" aria-selected="false" tabindex="-1">
-
-                    SQL
-
-                    </a>
-
-                 </li>
-
-              </ul>
-
-              <div class="govuk-tabs__panel" id="sort" role="tabpanel" aria-labelledby="tab_past-day">
-
-                 
-
-                 <div class="app-example__code" data-module="app-copy">
-
-                    <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
-
-                    <pre>
-
-                        <code tabindex="0" class="python">#Sort trips by distance (Lowest First)
-sort_df = spark_df.sort('trip_distance')
-
-#Sort trips by fare (Highest First)
-sort_df = spark_df.sort('fare_amount', ascending=False)
-
-#Sort trips by Pickup Zip (Highest first) then Date (Earliest first)
-sort_df = spark_df.sort(['pickup_zip', 'tpep_pickup_datetime'], ascending=[False, True])
-display(sort_df)</code>
-
-                    </pre>
-
-                 </div>
-
-              </div>
-
               <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week" role="tabpanel" aria-labelledby="tab_past-week">
 
                  
@@ -273,9 +140,9 @@ display(sort_df)</code>
                     <pre>
 
                         <code tabindex="0" class="r">
-library(SparkR)
-spark_df <- tableToDF("samples.nyctaxi.trips")
-display(spark_df)
+   library(SparkR)
+   spark_df <- tableToDF("samples.nyctaxi.trips")
+   display(spark_df)
                         </code>
 
                     </pre>
@@ -295,11 +162,11 @@ display(spark_df)
                     <pre>
 
                         <code tabindex="0" class="javascript">
-SELECT * FROM samples.nyctaxi.trips
+   SELECT * FROM samples.nyctaxi.trips
 
-FROM table_name
+   FROM table_name
 
-WHERE condition;
+   WHERE condition;
                         </code>
 
                     </pre>
@@ -310,11 +177,146 @@ WHERE condition;
 
            </div>
 
-        </form>
+</form>
+
+   <br>
 
 <br>
 
-<br>
+
+   <h2 class="govuk-heading-m">Sort your data</h2>
+   <p>Sorting your data will help you view the records most important to you.</p>
+   <link rel="stylesheet"
+
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
+
+   <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+
+   <script src="~/js/Support/code-highlight.js" asp-append-version="true"></script>
+
+ 
+
+<form action="/form-handler" method="post" novalidate="">
+
+           <div class="govuk-tabs" data-module="govuk-tabs">
+
+              <h2 class="govuk-tabs__title">
+
+                 Contents
+
+              </h2>
+
+              <ul class="govuk-tabs__list" role="tablist">
+
+                 <li class="govuk-tabs__list-item govuk-tabs__list-item--selected" role="presentation">
+
+                    <a class="govuk-tabs__tab" href="#past-day" id="tab_past-day" role="tab" aria-controls="past-day" aria-selected="true" tabindex="0">
+
+                    Python
+
+                    </a>
+
+                 </li>
+
+                 <li class="govuk-tabs__list-item" role="presentation">
+
+                    <a class="govuk-tabs__tab" href="#past-week" id="tab_past-week" role="tab" aria-controls="past-week" aria-selected="false" tabindex="-1">
+
+                    R
+
+                    </a>
+
+                 </li>
+
+                 <li class="govuk-tabs__list-item" role="presentation">
+
+                    <a class="govuk-tabs__tab" href="#past-month" id="tab_past-month" role="tab" aria-controls="past-month" aria-selected="false" tabindex="-1">
+
+                    SQL
+
+                    </a>
+
+                 </li>
+
+              </ul>
+
+              <div class="govuk-tabs__panel" id="past-day" role="tabpanel" aria-labelledby="tab_past-day">
+
+                 
+
+                 <div class="app-example__code" data-module="app-copy">
+
+                    <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
+
+                    <pre>
+
+                        <code tabindex="0" class="python">#Sort trips by distance (Lowest First)
+   sort_df = spark_df.sort('trip_distance')
+
+   #Sort trips by fare (Highest First)
+   sort_df = spark_df.sort('fare_amount', ascending=False)
+
+   #Sort trips by Pickup Zip (Highest first) then Date (Earliest first)
+   sort_df = spark_df.sort(['pickup_zip', 'tpep_pickup_datetime'], ascending=[False, True])
+   display(sort_df)</code>
+
+                    </pre>
+
+                 </div>
+
+              </div>
+
+              <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week" role="tabpanel" aria-labelledby="tab_past-week">
+
+                 
+
+                 <div class="app-example__code" data-module="app-copy">
+
+                    <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
+
+                    <pre>
+
+                        <code tabindex="0" class="r">
+   library(SparkR)
+   spark_df <- tableToDF("samples.nyctaxi.trips")
+   display(spark_df)
+                        </code>
+
+                    </pre>
+
+                 </div>
+
+              </div>
+
+              <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month" role="tabpanel" aria-labelledby="tab_past-month">
+
+                 
+
+                 <div class="app-example__code" data-module="app-copy">
+
+                    <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
+
+                    <pre>
+
+                        <code tabindex="0" class="javascript">
+   SELECT * FROM samples.nyctaxi.trips
+
+   FROM table_name
+
+   WHERE condition;
+                        </code>
+
+                    </pre>
+
+                 </div>
+
+              </div>
+
+           </div>
+
+</form>
+
+      <br><br>
 
 
 <h2 class="govuk-heading-m">Aggregate your data</h2>
@@ -384,12 +386,12 @@ WHERE condition;
                     <pre>
 
                         <code tabindex="0" class="python">
-#Get mean of all fields per Pickup Zip
-agg_df = spark_df.groupby('pickup_zip').mean()
+   #Get mean of all fields per Pickup Zip
+   agg_df = spark_df.groupby('pickup_zip').mean()
 
-#Get count of all fields per Pickup Zip to Drop off zone
-agg_df = spark_df.groupby(['pickup_zip', 'dropoff_zip']).count()
-display(agg_df)</code>
+   #Get count of all fields per Pickup Zip to Drop off zone
+   agg_df = spark_df.groupby(['pickup_zip', 'dropoff_zip']).count()
+   display(agg_df)</code>
 
                     </pre>
 
@@ -408,9 +410,9 @@ display(agg_df)</code>
                     <pre>
 
                         <code tabindex="0" class="r">
-library(SparkR)
-spark_df <- tableToDF("samples.nyctaxi.trips")
-display(spark_df)
+   library(SparkR)
+   spark_df <- tableToDF("samples.nyctaxi.trips")
+   display(spark_df)
                         </code>
 
                     </pre>
@@ -430,11 +432,11 @@ display(spark_df)
                     <pre>
 
                         <code tabindex="0" class="javascript">
-SELECT * FROM samples.nyctaxi.trips
+   SELECT * FROM samples.nyctaxi.trips
 
-FROM table_name
+   FROM table_name
 
-WHERE condition;
+   WHERE condition;
                         </code>
 
                     </pre>
@@ -445,11 +447,9 @@ WHERE condition;
 
            </div>
 
-        </form>
+</form>
 
-<br>
-
-<br>
+   <br><br>
 
 
 <h2 class="govuk-heading-m">Join your data</h2>
@@ -478,7 +478,7 @@ WHERE condition;
 
                  <li class="govuk-tabs__list-item govuk-tabs__list-item--selected" role="presentation">
 
-                    <a class="govuk-tabs__tab" href="#join-python" id="tab_join-python" role="tab" aria-controls="past-day" aria-selected="true" tabindex="0">
+                    <a class="govuk-tabs__tab" href="#past-day" id="tab_past-day" role="tab" aria-controls="past-day" aria-selected="true" tabindex="0">
 
                     Python
 
@@ -488,7 +488,7 @@ WHERE condition;
 
                  <li class="govuk-tabs__list-item" role="presentation">
 
-                    <a class="govuk-tabs__tab" href="#join-r" id="tab_join-r" role="tab" aria-controls="past-week" aria-selected="false" tabindex="-1">
+                    <a class="govuk-tabs__tab" href="#past-week" id="tab_past-week" role="tab" aria-controls="past-week" aria-selected="false" tabindex="-1">
 
                     R
 
@@ -498,7 +498,7 @@ WHERE condition;
 
                  <li class="govuk-tabs__list-item" role="presentation">
 
-                    <a class="govuk-tabs__tab" href="#join-sql" id="join-sql" role="tab" aria-controls="past-month" aria-selected="false" tabindex="-1">
+                    <a class="govuk-tabs__tab" href="#past-month" id="tab_past-month" role="tab" aria-controls="past-month" aria-selected="false" tabindex="-1">
 
                     SQL
 
@@ -508,7 +508,7 @@ WHERE condition;
 
               </ul>
 
-              <div class="govuk-tabs__panel" id="join-sql" role="tabpanel" aria-labelledby="tab_past-day">
+              <div class="govuk-tabs__panel" id="past-day" role="tabpanel" aria-labelledby="tab_past-day">
 
                  
 
@@ -519,14 +519,14 @@ WHERE condition;
                     <pre>
 
                         <code tabindex="0" class="python">#Append two data sets together (Combining the filtered dataframes of Zip=10065 and 10009)
-part_1_df = spark_df[spark_df['pickup_zip']=='10065']
-part_2_df = spark_df[spark_df['pickup_zip']=='10009']
-merge_df = part_1_df.union(part_2_df)
+   part_1_df = spark_df[spark_df['pickup_zip']=='10065']
+   part_2_df = spark_df[spark_df['pickup_zip']=='10009']
+   merge_df = part_1_df.union(part_2_df)
 
-#Join two datasets (Joining the maximum fare found with the full listing of fares)
-max_df = spark_df.groupby('pickup_zip').max().select(['pickup_zip', 'max(fare_amount)'])
-join_df = spark_df.join(max_df, on='pickup_zip', how='inner')
-display(join_df)</code>
+   #Join two datasets (Joining the maximum fare found with the full listing of fares)
+   max_df = spark_df.groupby('pickup_zip').max().select(['pickup_zip', 'max(fare_amount)'])
+   join_df = spark_df.join(max_df, on='pickup_zip', how='inner')
+   display(join_df)</code>
 
                     </pre>
 
@@ -545,9 +545,9 @@ display(join_df)</code>
                     <pre>
 
                         <code tabindex="0" class="r">
-library(SparkR)
-spark_df <- tableToDF("samples.nyctaxi.trips")
-display(spark_df)
+   library(SparkR)
+   spark_df <- tableToDF("samples.nyctaxi.trips")
+   display(spark_df)
                         </code>
 
                     </pre>
@@ -567,11 +567,11 @@ display(spark_df)
                     <pre>
 
                         <code tabindex="0" class="javascript">
-SELECT * FROM samples.nyctaxi.trips
+   SELECT * FROM samples.nyctaxi.trips
 
-FROM table_name
+   FROM table_name
 
-WHERE condition;
+   WHERE condition;
                         </code>
 
                     </pre>
@@ -582,7 +582,7 @@ WHERE condition;
 
            </div>
 
-        </form>
+</form>
 
 <br>
 
