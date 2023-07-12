@@ -120,9 +120,10 @@ a <- substr(a,nchar(b) + 1, nchar(a))
             <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
             <pre>
                 <code tabindex="0" class="javascript">
-SELECT column1, column2, ...
-FROM table_name
-WHERE condition;
+%sql
+SELECT * FROM samples.nyctaxi.trips
+WHERE
+pickup_zip ='10001' and trip_distance <5 and fare_amount >20.0 ;
                 </code>
             </pre>
          </div>
@@ -199,9 +200,9 @@ a <- substr(a,nchar(b) + 1, nchar(a))
             <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
             <pre>
                 <code tabindex="0" class="javascript">
-SELECT column1, column2, ...
-FROM table_name
-WHERE condition;
+##Sort_your_data##
+%sql
+SELECT * FROM samples.nyctaxi.trips order by trip_distance Asc, fare_amount desc,pickup_zip desc, tpep_dropoff_datetime asc;
                 </code>
             </pre>
          </div>
