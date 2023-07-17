@@ -277,19 +277,12 @@ a <- substr(a,nchar(b) + 1, nchar(a))
             <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
             <pre>
                 <code tabindex="0" class="javascript">
-                  %sql
-
-                  SELECT pickup_zip,dropoff_zip ,COUNT(*)
-                  
-                  FROM
-                  
-                      samples.nyctaxi.trips
-                  
-                   
-                  
-                  GROUP BY pickup_zip,dropoff_zip
-                  
-                  ORDER BY count(*);
+%sql
+SELECT pickup_zip,dropoff_zip ,COUNT(*)
+FROM
+samples.nyctaxi.trips
+GROUP BY pickup_zip,dropoff_zip
+ORDER BY count(*);
                 </code>
             </pre>
          </div>
@@ -362,23 +355,15 @@ display(spark_df)
             <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
             <pre>
                 <code tabindex="0" class="javascript">
-                  %sql
-
-                  SELECT
-                  
-                      T1.pickup_zip, MAX(T1.fare_amount)
-                  
-                  FROM
-                  
-                      samples.nyctaxi.trips T1
-                  
-                          INNER JOIN
-                  
-                      samples.nyctaxi.trips USING (pickup_zip)
-                  
-                  GROUP BY pickup_zip
-                  
-                  ORDER BY pickup_zip;
+%sql
+SELECT
+T1.pickup_zip, MAX(T1.fare_amount)
+FROM
+samples.nyctaxi.trips T1
+INNER JOIN
+samples.nyctaxi.trips USING (pickup_zip)
+GROUP BY pickup_zip
+ORDER BY pickup_zip;
                 </code>
             </pre>
          </div>
