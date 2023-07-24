@@ -83,6 +83,9 @@
             <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
             <pre>
                <code tabindex="0" class="python">
+
+
+#Load sample data
 spark_df = spark.read.table('samples.nyctaxi.trips')
                
 #Filter trips start in zip 10001
@@ -149,7 +152,6 @@ display(filter_df)
             <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
             <pre>
                 <code tabindex="0" class="javascript">
-%sql
 SELECT * FROM samples.nyctaxi.trips
 WHERE
 pickup_zip ='10001' and trip_distance <5 and fare_amount >20.0 ;
