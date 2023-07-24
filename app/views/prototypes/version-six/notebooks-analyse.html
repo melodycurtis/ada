@@ -103,14 +103,16 @@ display(filter_df)</code>
          <div class="app-example__code" data-module="app-copy">
             <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
             <pre>
-                <code tabindex="0" class="r">
-library(tidyverse)
-a <- "one"
-b <- "two"
-a <- paste(a,b, sep = "")
-b <- substr(a,0,nchar(a) - nchar(b))
-a <- substr(a,nchar(b) + 1, nchar(a))
-                </code>
+                <code tabindex="0" class="r">%r
+# Import required libraries
+# library(sparklyr) - Commented out as it is not needed
+library(SparkR)
+# Convert table to DataFrame
+df2 <- tableToDF("samples.nyctaxi.trips")
+# Collect the DataFrame to the driver node
+df <- collect(df2)
+# Display the collected DataFrame in a visual format
+display(df)</code>
             </pre>
          </div>
       </div>
