@@ -103,7 +103,7 @@ display(filter_df)</code>
          <div class="app-example__code" data-module="app-copy">
             <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
             <pre>
-                <code tabindex="0" class="r">%r
+                <code tabindex="0" class="r">
 # Import required libraries
 # library(sparklyr) - Commented out as it is not needed
 library(SparkR)
@@ -114,8 +114,34 @@ df2 <- tableToDF("samples.nyctaxi.trips")
 # Collect the DataFrame to the driver node
 df <- collect(df2)
 
-# Display the collected DataFrame in a visual format
-display(df)</code>
+# Import required libraries
+
+library(dplyr)
+
+ 
+
+# Filter the DataFrame based on pickup_zip equals "10001"
+
+filter_df <- filter(df, pickup_zip == "10001")
+
+
+# Filter trips with distance less than 5 miles
+
+filter_df <- filter(filter_df, trip_distance < 5)
+
+ 
+
+# Filter fares between 20 and 30 dollars
+
+filter_df <- filter(filter_df, fare_amount > 20.0 & fare_amount <= 30.0)
+
+ 
+
+# Display the final filtered DataFrame
+
+display(filter_df)
+
+</code>
             </pre>
          </div>
       </div>
