@@ -83,8 +83,6 @@
             <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
             <pre>
                <code tabindex="0" class="python">
-
-
 #Load sample data
 spark_df = spark.read.table('samples.nyctaxi.trips')
                
@@ -214,8 +212,7 @@ display(sort_df)</code>
          <div class="app-example__code" data-module="app-copy">
             <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
             <pre>
-                <code tabindex="0" class="r">%r
-library(dplyr)
+                <code tabindex="0" class="r">library(dplyr)
                   
 # Sort trips by distance (Lowest First)
 sort_df <- arrange(df, trip_distance)
@@ -238,7 +235,7 @@ display(sort_df)</code>
             <pre>
                 <code tabindex="0" class="javascript">
 ##Sort_your_data##
-%sql
+
 SELECT * FROM samples.nyctaxi.trips order by trip_distance Asc, fare_amount desc,pickup_zip desc, tpep_dropoff_datetime asc;
                 </code>
             </pre>
@@ -314,7 +311,7 @@ a <- substr(a,nchar(b) + 1, nchar(a))
             <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
             <pre>
                 <code tabindex="0" class="javascript">
-%sql
+
 SELECT pickup_zip,dropoff_zip ,COUNT(*)
 FROM
 samples.nyctaxi.trips
@@ -392,7 +389,7 @@ display(spark_df)
             <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
             <pre>
                 <code tabindex="0" class="javascript">
-%sql
+
 SELECT
 T1.pickup_zip, MAX(T1.fare_amount)
 FROM
