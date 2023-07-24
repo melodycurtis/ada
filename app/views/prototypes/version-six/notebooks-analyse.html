@@ -84,7 +84,6 @@
             <pre>
                <code tabindex="0" class="python">
 spark_df = spark.read.table('samples.nyctaxi.trips')
-display(spark_df)
                
 #Filter trips start in zip 10001
 filter_df = spark_df[spark_df['pickup_zip']=='10001']
