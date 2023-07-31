@@ -231,8 +231,33 @@ display(sort_df)</code>
             <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
             <pre>
                 <code tabindex="0" class="javascript">
-##Sort_your_data##
-SELECT * FROM samples.nyctaxi.trips order by trip_distance Asc, fare_amount desc,pickup_zip desc, tpep_dropoff_datetime asc;
+-- First Example: Order by trip distance
+SELECT 
+   * 
+FROM 
+   samples.nyctaxi.trips 
+ORDER BY 
+   trip_distance 
+;
+
+-- Second Example: Order by fare amount decending
+SELECT 
+   * 
+FROM
+samples.nyctaxi.trips 
+ORDER BY 
+   fare_amount DESC
+; 
+
+-- Third Example: Order by pickup zone followed by pickup datetime in decending order
+SELECT 
+   * 
+FROM
+samples.nyctaxi.trips 
+ORDER BY
+   pickup_zip,
+   tpep_dropoff_datetime asc
+;
                 </code>
             </pre>
          </div>
