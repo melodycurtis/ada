@@ -143,13 +143,13 @@ SELECT
 FROM 
    samples.nyctaxi.trips
 WHERE
-   pickup_zip ='10001' 
+   pickup_zip = '10001' 
 AND 
-   trip_distance <5 
+   trip_distance < 5 
 AND 
-   fare_amount >20.0
+   fare_amount > 20.0
 AND
-   fare_amount <30.0
+   fare_amount <= 30.0
 </code>
             </pre>
          </div>
