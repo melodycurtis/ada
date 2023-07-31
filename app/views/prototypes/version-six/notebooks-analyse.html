@@ -109,13 +109,12 @@ display(filter_df)</code>
 library(SparkR)
 
 # Convert table to DataFrame
-df2 <- tableToDF("samples.nyctaxi.trips")
+spark_df <- tableToDF("samples.nyctaxi.trips")
 
 # Collect the DataFrame to the driver node
-df <- collect(df2)
+df <- collect(spark_df)
 
 # Import required libraries
-
 library(dplyr)
 
  
