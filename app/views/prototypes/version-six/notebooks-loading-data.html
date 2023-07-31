@@ -140,7 +140,11 @@
            <pre>
 
                <code tabindex="0" class="python">#Load sample data
-spark_df = spark.read.table('samples.nyctaxi.trips')</code>
+spark_df = spark.read.table('samples.nyctaxi.trips')
+
+# Display the final filtered DataFrame
+display(spark_df)
+</code>
 
            </pre>
 
