@@ -94,7 +94,7 @@ filter_df = spark_df[spark_df['pickup_zip']=='10001']
 filter_df = filter_df[filter_df['trip_distance']<5]
                
 #Filter fares between 20 and 30 dollars
-filter_df = spark_df[(filter_df['fare_amount']>20.0) & (filter_df['fare_amount']<=30.0)]
+filter_df = filter_df[(filter_df['fare_amount']>20.0) & (filter_df['fare_amount']<=30.0)]
 display(filter_df)</code>
             </pre>
          </div>
