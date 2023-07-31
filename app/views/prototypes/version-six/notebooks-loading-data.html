@@ -158,7 +158,14 @@ spark_df = spark.read.table('samples.nyctaxi.trips')</code>
 
            <pre>
 
-               <code tabindex="0" class="r">print("Hello World")</code>
+               <code tabindex="0" class="r"># Import required libraries
+library(SparkR)
+                
+# Convert table to DataFrame
+spark_df <- tableToDF("samples.nyctaxi.trips")
+
+# Display the final filtered DataFrame
+display(spark_df)</code>
 
            </pre>
 
