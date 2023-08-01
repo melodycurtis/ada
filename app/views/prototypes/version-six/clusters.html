@@ -27,168 +27,45 @@
 
 <div class="govuk-form-group">
   <fieldset class="govuk-fieldset" aria-describedby="">
-    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
       <h1 class="govuk-fieldset__heading">
-        How to use clusters
-      </h1>
+        How clusters work</h1>
     </legend>
   </fieldset>
 </div>
 
-    
-  
-
-<p>Log in to <a class="govuk-link" href="https://adb-4231618882514780.0.azuredatabricks.net/login.html?o=4231618882514780" target="_blank">Databricks</a></p> 
- 
-<p><img src="/public/images/home-new.png" class="app-walkthrough-image"></p>
-<br>
-
-<p>Select <STRONG>Workspace</STRONG> from the side menu and select <STRONG>Users</STRONG> to find your personal folder.</p>
-<p><img src="/public/images/workspace-new.png" class="app-walkthrough-image"></p>
-
-<p>In the <STRONG>Users</STRONG> folder you will see your email. This is your personal folder - no one else will have access to it. An area - where you can test things.</p>
-<p>Create a notebook in this folder.</p><br>
-<h2 class="govuk-heading-m">Create a Notebook</h2>
+<p>A cluster is a group of remote machines providing processing power.<br>
+ They help to manage the data stored in the platform, so even if you don't use Databricks to run your analyses, you will need to use clusters to access the data.</p>
+  <p>You will be given access to clusters when you request access to the platform.<br>
+    If you think you should have access to a cluster that isn't listed in your account - contact support.</p><br><br>
+</div>
+<div class="govuk-grid-column-full">
+<h2 class="govuk-heading-l">Available clusters</h2>
 <ol class="govuk-list govuk-list--number">
-  <li>Click on the dropdown <img src="/public/images/add-button.png" class="app-walkthrough-icon"> button on the right and select <STRONG>Notebook</STRONG>.</li>
+  <li>Click on the <STRONG>Compute</STRONG> button on the left side menu to see the clusters available to you.<br> Click on each cluster to see more details.<br>
+    Click on the play icon at the end of the row - to run the cluster. </li>
   
-  <p><img src="/public/images/add-notebook.png" class="app-walkthrough-image"></p><br>
+  <p><img src="/public/images/compute.png" class="app-walkthrough-image"></p><br>
   
   
-    <li>Your new notebook will be called 'untiltled' and will have a default coding language.</li>
+    <li>In the DfE we use two types of clusters.<br><br> 
+      <h2 class="govuk-heading-m">Shared Access Clusters</h2>
+  These clusters are linked to specific projects to help manage usage.<br> They are set up by an administrator and will be sized for the project needs.<br> They will scale up and down to manage varying workloads. <br>
+  You cannot use a shared cluster if you are working in R.<br><br><p></p>
+  <h2 class="govuk-heading-m">Single User Access (Personal) Clusters</h2>
+  These clusters are linked to a single user and the size will be limited.<br>
+  They are useful when you need to make configuration changes that are specific to your needs.<br>
+  Use this cluster if you are working in R.</li>
+  
+  
+  </p>
 
-
-<p><img src="/public/images/notebook-name.png" class="app-walkthrough-image"></p><br>
-<li>Edit the name by double clicking on the top bar and select a language by clicking on the dropdown <img src="/public/images/code-name.png" class="app-walkthrough-icon">. <br>Select a cluster by clicking on the <STRONG>Connect</STRONG>  button.</li>
-<p>You might be new to using clusters. <br>Understand how to use clusters.</p>
 
     
-    <p><img src="/public/images/new-note1.png" class="app-walkthrough-image"></p><br>
-<li>Type some code in to the command cell to check that everything is running.</li>
-<p><img src="/public/images/new-note3.png" class="app-walkthrough-image"></p><br>
+    
 
 
-<link rel="stylesheet"
-
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
-
-<script src="~/js/Support/code-highlight.js" asp-append-version="true"></script>
-
- 
-
-<form action="/form-handler" method="post" novalidate="">
-
-           <div class="govuk-tabs" data-module="govuk-tabs">
-
-              <h2 class="govuk-tabs__title">
-
-                 Contents
-
-              </h2>
-
-              <ul class="govuk-tabs__list" role="tablist">
-
-                 <li class="govuk-tabs__list-item govuk-tabs__list-item--selected" role="presentation">
-
-                    <a class="govuk-tabs__tab" href="#past-day" id="tab_past-day" role="tab" aria-controls="past-day" aria-selected="true" tabindex="0">
-
-                    Python
-
-                    </a>
-
-                 </li>
-
-                 <li class="govuk-tabs__list-item" role="presentation">
-
-                    <a class="govuk-tabs__tab" href="#past-week" id="tab_past-week" role="tab" aria-controls="past-week" aria-selected="false" tabindex="-1">
-
-                    R
-
-                    </a>
-
-                 </li>
-
-                 <li class="govuk-tabs__list-item" role="presentation">
-
-                    <a class="govuk-tabs__tab" href="#past-month" id="tab_past-month" role="tab" aria-controls="past-month" aria-selected="false" tabindex="-1">
-
-                    SQL
-
-                    </a>
-
-                 </li>
-
-              </ul>
-
-              <div class="govuk-tabs__panel" id="past-day" role="tabpanel" aria-labelledby="tab_past-day">
-
-                 
-
-                 <div class="app-example__code" data-module="app-copy">
-
-                    <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
-
-                    <pre>
-
-                        <code tabindex="0" class="python">print("Hello World")</code>
-
-                    </pre>
-
-                 </div>
-
-              </div>
-
-              <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week" role="tabpanel" aria-labelledby="tab_past-week">
-
-                 
-
-                 <div class="app-example__code" data-module="app-copy">
-
-                    <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
-
-                    <pre>
-
-                        <code tabindex="0" class="r">print("Hello World")</code>
-
-                    </pre>
-
-                 </div>
-
-              </div>
-
-              <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month" role="tabpanel" aria-labelledby="tab_past-month">
-
-                 
-
-                 <div class="app-example__code" data-module="app-copy">
-
-                    <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
-
-                    <pre>
-
-                        <code tabindex="0" class="javascript">SELECT "Hello World"</code>
-
-                    </pre>
-
-                 </div>
-
-              </div>
-
-           </div>
-
-        </form>
-
-
-
-<li>Click on the <STRONG>Run all</STRONG> button on the top bar to run your code.</li>
-
-<p>You may need to wait for your cluster to start</p>
-
-<p><img src="/public/images/run-all.png" class="app-walkthrough-image"></p>
-<li>You can add additional code cells by clicking on the plus icon + at the bottom. This will help you to structure large amounts of code and make it easier to navigate.</li>
-<p><img src="/public/images/new-cell2.png" class="app-walkthrough-image"></p>
+<br><br>
 
 
 </ol>
@@ -198,12 +75,9 @@
 <div class="govuk-button-group">
             
   <a href="notebooks-loading-data" class="govuk-button show-continue" style="display: inline;">
-    Next - load your data
+    Back
   </a>
   
-  <a href="notebooks-learning" class="govuk-button govuk-button--secondary" style="display: inline;">
-    Back to Using R, Python and SQL
-  </a>
   
   
 
