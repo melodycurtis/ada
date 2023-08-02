@@ -314,13 +314,20 @@ display(agg_df)</code>
             <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
             <pre>
                 <code tabindex="0" class="r">
-library(tidyverse)
-a <- "one"
-b <- "two"
-a <- paste(a,b, sep = "")
-b <- substr(a,0,nchar(a) - nchar(b))
-a <- substr(a,nchar(b) + 1, nchar(a))
-                </code>
+#Load dplyr library
+library(dplyr)
+                  
+#Get the mean of all fields per Pickup zip
+mean_spark_df <- spark_df %>%
+   group_by(pickup_zip) %>%
+   summarise(avg_fare_amount = mean(fare_amount, na.rm = TRUE),
+      avg_dropoff_zip = mean(dropoff_zip, na.rm = TRUE),
+      avg_trip_distance = mean(trip_distance, na.rm = TRUE))
+                  
+#Get count of all fields per Pickup Zip to Drop off zone
+count_spark_df <- spark_df %>%
+   group_by(pickup_zip, dropoff_zip) %>%
+   count()</code>
             </pre>
          </div>
       </div>
@@ -395,11 +402,15 @@ display(join_df)</code>
          <div class="app-example__code" data-module="app-copy">
             <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
             <pre>
-               <code tabindex="0" class="join-r">
-library(SparkR)
-spark_df <- tableToDF("samples.nyctaxi.trips")
-display(spark_df)
-                                          </code>
+               <code tabindex="0" class="join-r">#Load dplyr library
+library(dplyr)
+                  
+#Append two data sets together (Combining the filtered dataframes of pickup zips =10065 and 10009)
+part_1_df <- spark_df %>%
+   filter(pickup_zip == "10065")
+part_2_df <- spark_df %>%
+   filter(pickup_zip == "10009")
+merge_df <- union(part_1_df, part_2_df)</code>
             </pre>
          </div>
       </div>
