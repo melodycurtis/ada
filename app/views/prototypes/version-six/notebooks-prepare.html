@@ -43,166 +43,24 @@
 <p><img src="/public/images/home-new.png" class="app-walkthrough-image"></p>
 <br>
 
-<p>Select <STRONG>Workspace</STRONG> from the side menu and select <STRONG>Home</STRONG>. This is your personal folder - no one else will have access to it. Use this area to test things out.</p>
-<p><img src="/public/images/workspace-new.png" class="app-walkthrough-image"></p>
-
-<p></p>
-<p>Create a notebook in this folder.</p><br>
-<h2 class="govuk-heading-m">Create a Notebook</h2>
+<h2 class="govuk-heading-m">The right environment</h2>
 <ol class="govuk-list govuk-list--number">
-  <li>Click on the dropdown <img src="/public/images/add-button.png" class="app-walkthrough-icon"> button on the right and select <STRONG>Notebook</STRONG>.</li>
+  <li>Check you are in the right environment by clicking on the dropdown on the top bar.</li>
   
-  <p><img src="/public/images/add-notebook.png" class="app-walkthrough-image"></p><br>
+  <p><img src="/public/images/environment.png" class="app-walkthrough-image"></p><br>
   
   
-    <li>Your new notebook will be called 'untiltled' and will have a default coding language. Click on the name to edit it and select a language by clicking on the dropdown <img src="/public/images/code-name.png" class="app-walkthrough-icon"></li>
+    <li> Table fom Craig</li>
+    <p></p>
 
 
 <p><img src="/public/images/notebook-name.png" class="app-walkthrough-image"></p>
-<br>
-<li>Click on the dropdown on the top right - to select your cluster. It might say <STRONG>Connect</STRONG> or <STRONG>Terminated</STRONG> or a cluster name. This example is connected to the <STRONG>ADA project</STRONG> cluster.</li>
-  <p>It's important to know <a class="govuk-link" href="clusters">how clusters work</a></p> 
-  <p>f you're using R - you need to create a personal cluster.</p>
-  
-  <p><img src="/public/images/clusters.png" class="app-walkthrough-image"></p><br>
-    
-<li>Type your code in the command cell. Or select the tab with the language you want to use and click on the copy code button.</li>
-<p><img src="/public/images/new-note3.png" class="app-walkthrough-image"></p><br>
 
-<li>Use the tabs below to try out some code. Select the language you want to use and click on the copy code button. Paste into your command cell.</li><br>
-
-<link rel="stylesheet"
-
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/default.min.css">
-
-<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
-
-<script src="~/js/Support/code-highlight.js" asp-append-version="true"></script>
-
- 
-
-<form action="/form-handler" method="post" novalidate="">
-
-           <div class="govuk-tabs" data-module="govuk-tabs">
-
-              <h2 class="govuk-tabs__title">
-
-                 Contents
-
-              </h2>
-
-              <ul class="govuk-tabs__list" role="tablist">
-
-                 <li class="govuk-tabs__list-item govuk-tabs__list-item--selected" role="presentation">
-
-                    <a class="govuk-tabs__tab" href="#past-day" id="tab_past-day" role="tab" aria-controls="past-day" aria-selected="true" tabindex="0">
-
-                    Python
-
-                    </a>
-
-                 </li>
-
-                 <li class="govuk-tabs__list-item" role="presentation">
-
-                    <a class="govuk-tabs__tab" href="#past-week" id="tab_past-week" role="tab" aria-controls="past-week" aria-selected="false" tabindex="-1">
-
-                    R
-
-                    </a>
-
-                 </li>
-
-                 <li class="govuk-tabs__list-item" role="presentation">
-
-                    <a class="govuk-tabs__tab" href="#past-month" id="tab_past-month" role="tab" aria-controls="past-month" aria-selected="false" tabindex="-1">
-
-                    SQL
-
-                    </a>
-
-                 </li>
-
-              </ul>
-
-              <div class="govuk-tabs__panel" id="past-day" role="tabpanel" aria-labelledby="tab_past-day">
-
-                 
-
-                 <div class="app-example__code" data-module="app-copy">
-
-                    <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
-
-                    <pre>
-
-                        <code tabindex="0" class="python">print("Hello World")</code>
-
-                    </pre>
-
-                 </div>
-
-              </div>
-
-              <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week" role="tabpanel" aria-labelledby="tab_past-week">
-
-                 
-
-                 <div class="app-example__code" data-module="app-copy">
-
-                    <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
-
-                    <pre>
-
-                        <code tabindex="0" class="r">print("Hello World")</code>
-
-                    </pre>
-
-                 </div>
-
-              </div>
-
-              <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month" role="tabpanel" aria-labelledby="tab_past-month">
-
-                 
-
-                 <div class="app-example__code" data-module="app-copy">
-
-                    <button class="app-copy-button js-copy-button" aria-live="assertive">Copy code</button>
-
-                    <pre>
-
-                        <code tabindex="0" class="javascript">SELECT "Hello World"</code>
-
-                    </pre>
-
-                 </div>
-
-              </div>
-
-           </div>
-
-        </form>
-
-
-<br>
-<li>Click on the <STRONG>Run all</STRONG> button on the top bar to run your code.</li>
-
-<p>You may need to wait for your cluster to start</p>
-
-<p><img src="/public/images/run-all.png" class="app-walkthrough-image"></p>
-<br>
-<li>You can add code cells if you hover near the bottom of a cell and click on the plus icon. This will help to structure large amounts of code and make it easier to navigate.</li><br>
-<p><img src="/public/images/new-cell2.png" class="app-walkthrough-image"></p>
-
-
-</ol>
-
-<br>
 
 <div class="govuk-button-group">
             
-  <a href="notebooks-loading-data" class="govuk-button show-continue" style="display: inline;">
-    Next - load your data
+  <a href="notebooks-running-code" class="govuk-button show-continue" style="display: inline;">
+    Next - create a notebook
   </a>
   
   <a href="notebooks-learning" class="govuk-button govuk-button--secondary" style="display: inline;">
